@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>알림 받기 - D-Mail 사용 가이드</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" onclick="toggleSidebar()">
+    <span id="menu-icon">&#9776;</span>
+  </button>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon">&#9993;</div>
+          <span>D-Mail</span>
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">시작하기</div>
+        <a href="index.html" class="nav-link">
+          <span class="nav-icon">&#127968;</span>
+          <span>홈</span>
+        </a>
+        <a href="getting-started.html" class="nav-link">
+          <span class="nav-icon">&#128640;</span>
+          <span>시작하기</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">메일 연결</div>
+        <a href="gmail-connect.html" class="nav-link">
+          <span class="nav-icon">&#128231;</span>
+          <span>Gmail 연결</span>
+        </a>
+        <a href="imap-connect.html" class="nav-link">
+          <span class="nav-icon">&#128233;</span>
+          <span>다른 메일 연결</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">기능 사용법</div>
+        <a href="notifications.html" class="nav-link active">
+          <span class="nav-icon">&#128276;</span>
+          <span>알림 받기</span>
+        </a>
+        <a href="send-mail.html" class="nav-link">
+          <span class="nav-icon">&#9992;</span>
+          <span>메일 보내기</span>
+        </a>
+        <a href="manage-mail.html" class="nav-link">
+          <span class="nav-icon">&#9881;</span>
+          <span>메일 관리</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">도움말</div>
+        <a href="troubleshooting.html" class="nav-link">
+          <span class="nav-icon">&#128295;</span>
+          <span>문제 해결</span>
+        </a>
+        <a href="faq.html" class="nav-link">
+          <span class="nav-icon">&#10067;</span>
+          <span>자주 묻는 질문</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="index.html">홈</a>
+        <span class="breadcrumb-separator">&#8250;</span>
+        <span>알림 받기</span>
+      </div>
+
+      <header class="page-header">
+        <h1 class="page-title">&#128276; 메일 알림 받기</h1>
+        <p class="page-description">
+          새 메일이 도착하면 Discord DM으로 실시간 알림을 받아보세요!
+        </p>
+      </header>
+
+      <!-- How it Works -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#9889;</span> 어떻게 작동하나요?
+        </h2>
+        <div class="card-content">
+          <div class="steps">
+            <div class="step">
+              <h3 class="step-title">새 메일 확인</h3>
+              <div class="step-content">
+                <p>D-Mail은 <strong>30초마다</strong> 연결된 메일함에 새 메일이 있는지 확인합니다.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">알림 전송</h3>
+              <div class="step-content">
+                <p>새 메일이 발견되면 Discord DM으로 알림을 보냅니다.</p>
+                <p style="margin-top: 8px;">알림에는 발신자, 제목, 미리보기가 포함됩니다.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">인증코드 자동 추출</h3>
+              <div class="step-content">
+                <p>인증 코드가 포함된 메일은 AI가 자동으로 코드를 추출해서 보여줍니다!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notification Example -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128172;</span> 알림 예시
+        </h2>
+        <div class="card-content">
+          <div style="background: var(--bg-tertiary); border-radius: 8px; padding: 20px; border-left: 4px solid var(--accent-color);">
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px;">noreply@example.com</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">user@gmail.com</p>
+            <h3 style="font-size: 1.2rem; margin-bottom: 12px;">&#9993; 회원가입 인증코드</h3>
+            <div style="background: var(--bg-secondary); padding: 12px; border-radius: 6px; margin-bottom: 16px;">
+              <p style="color: var(--text-secondary);">Code: <code style="font-size: 1.1rem; font-weight: 600;">123456</code></p>
+            </div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <span style="background: var(--success-color); color: white; padding: 8px 16px; border-radius: 4px; font-size: 0.9rem;">메일 보기</span>
+              <span style="background: var(--accent-color); color: white; padding: 8px 16px; border-radius: 4px; font-size: 0.9rem;">답장하기</span>
+              <span style="background: var(--bg-secondary); color: var(--text-primary); padding: 8px 16px; border-radius: 4px; font-size: 0.9rem; border: 1px solid var(--border-color);">웹에서 보기</span>
+            </div>
+          </div>
+
+          <p style="margin-top: 16px; color: var(--text-muted); font-size: 0.9rem;">
+            위와 같은 형태로 알림이 옵니다. 버튼을 눌러 메일을 확인하거나 답장할 수 있어요.
+          </p>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#10024;</span> 알림 기능
+        </h2>
+        <div class="card-content">
+          <div class="feature-grid">
+            <div class="feature-card" style="cursor: default;">
+              <div class="feature-icon">&#129302;</div>
+              <h3 class="feature-title">AI 코드 추출</h3>
+              <p class="feature-description">인증코드, OTP 등을 자동으로 찾아서 표시해요</p>
+            </div>
+
+            <div class="feature-card" style="cursor: default;">
+              <div class="feature-icon">&#128065;</div>
+              <h3 class="feature-title">메일 보기</h3>
+              <p class="feature-description">버튼 클릭으로 전체 메일 내용을 확인해요</p>
+            </div>
+
+            <div class="feature-card" style="cursor: default;">
+              <div class="feature-icon">&#8617;</div>
+              <h3 class="feature-title">빠른 답장</h3>
+              <p class="feature-description">알림에서 바로 답장을 보낼 수 있어요 (Gmail)</p>
+            </div>
+
+            <div class="feature-card" style="cursor: default;">
+              <div class="feature-icon">&#127760;</div>
+              <h3 class="feature-title">웹에서 열기</h3>
+              <p class="feature-description">원본 메일을 웹 브라우저에서 열어요</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verification Code -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128273;</span> 인증코드 자동 추출
+        </h2>
+        <div class="card-content">
+          <p>
+            D-Mail은 <strong>Google Gemini AI</strong>를 사용해서 메일에서 인증코드를 자동으로 추출합니다.
+          </p>
+
+          <h4 style="margin-top: 20px; margin-bottom: 12px;">지원하는 코드 종류:</h4>
+          <ul style="padding-left: 24px;">
+            <li style="margin-bottom: 8px;">&#10003; 회원가입/로그인 인증코드</li>
+            <li style="margin-bottom: 8px;">&#10003; OTP (일회용 비밀번호)</li>
+            <li style="margin-bottom: 8px;">&#10003; 비밀번호 재설정 코드</li>
+            <li style="margin-bottom: 8px;">&#10003; 2단계 인증 코드</li>
+          </ul>
+
+          <div class="alert alert-info" style="margin-top: 16px;">
+            <span class="alert-icon">&#128161;</span>
+            <div>
+              인증코드가 감지되면 <code>Code: XXXXXX</code> 형태로 눈에 띄게 표시됩니다.
+              복사해서 바로 사용하세요!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Polling Info -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#9203;</span> 알림 주기
+        </h2>
+        <div class="card-content">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>항목</th>
+                  <th>내용</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>확인 주기</td>
+                  <td>30초마다</td>
+                </tr>
+                <tr>
+                  <td>알림 지연</td>
+                  <td>최대 30초 ~ 1분</td>
+                </tr>
+                <tr>
+                  <td>동시 연결</td>
+                  <td>여러 메일 계정 지원</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="alert alert-warning" style="margin-top: 16px;">
+            <span class="alert-icon">&#9888;</span>
+            <div>
+              <strong>참고:</strong> 메일 서버 상태에 따라 알림이 약간 지연될 수 있습니다.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tips -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128161;</span> 알아두면 좋은 점
+        </h2>
+        <div class="card-content">
+          <ul style="padding-left: 24px;">
+            <li style="margin-bottom: 12px;">
+              <strong>연결 직후 알림:</strong> 메일 연결 직후에는 기존 메일에 대한 알림이 오지 않습니다.
+              연결 이후에 도착하는 새 메일부터 알림이 발송됩니다.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>DM 허용:</strong> 봇의 DM이 차단되어 있으면 알림을 받을 수 없어요.
+              Discord 설정에서 서버 멤버의 DM을 허용해주세요.
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>여러 계정:</strong> 여러 메일 계정을 연결해도 모든 알림이 하나의 DM으로 옵니다.
+              어떤 계정의 메일인지 알림에 표시됩니다.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Next Steps -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#127919;</span> 다음 단계
+        </h2>
+        <div class="card-content">
+          <div class="feature-grid">
+            <a href="send-mail.html" class="feature-card">
+              <div class="feature-icon">&#9992;</div>
+              <h3 class="feature-title">메일 보내기</h3>
+              <p class="feature-description">Discord에서 메일 작성하고 보내기</p>
+            </a>
+
+            <a href="manage-mail.html" class="feature-card">
+              <div class="feature-icon">&#9881;</div>
+              <h3 class="feature-title">메일 관리</h3>
+              <p class="feature-description">연결된 메일 관리하기</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환">
+    <span id="theme-icon">&#127769;</span>
+  </button>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    }
+
+    function updateThemeIcon(theme) {
+      const icon = document.getElementById('theme-icon');
+      icon.innerHTML = theme === 'dark' ? '&#9728;' : '&#127769;';
+    }
+
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const icon = document.getElementById('menu-icon');
+      sidebar.classList.toggle('open');
+      icon.innerHTML = sidebar.classList.contains('open') ? '&#10005;' : '&#9776;';
+    }
+
+    document.addEventListener('click', function(e) {
+      const sidebar = document.getElementById('sidebar');
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+      if (window.innerWidth <= 768 &&
+          !sidebar.contains(e.target) &&
+          !menuBtn.contains(e.target) &&
+          sidebar.classList.contains('open')) {
+        toggleSidebar();
+      }
+    });
+  </script>
+</body>
+</html>

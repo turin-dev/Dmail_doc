@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail 연결 - D-Mail 사용 가이드</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" onclick="toggleSidebar()">
+    <span id="menu-icon">&#9776;</span>
+  </button>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon">&#9993;</div>
+          <span>D-Mail</span>
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">시작하기</div>
+        <a href="index.html" class="nav-link">
+          <span class="nav-icon">&#127968;</span>
+          <span>홈</span>
+        </a>
+        <a href="getting-started.html" class="nav-link">
+          <span class="nav-icon">&#128640;</span>
+          <span>시작하기</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">메일 연결</div>
+        <a href="gmail-connect.html" class="nav-link active">
+          <span class="nav-icon">&#128231;</span>
+          <span>Gmail 연결</span>
+        </a>
+        <a href="imap-connect.html" class="nav-link">
+          <span class="nav-icon">&#128233;</span>
+          <span>다른 메일 연결</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">기능 사용법</div>
+        <a href="notifications.html" class="nav-link">
+          <span class="nav-icon">&#128276;</span>
+          <span>알림 받기</span>
+        </a>
+        <a href="send-mail.html" class="nav-link">
+          <span class="nav-icon">&#9992;</span>
+          <span>메일 보내기</span>
+        </a>
+        <a href="manage-mail.html" class="nav-link">
+          <span class="nav-icon">&#9881;</span>
+          <span>메일 관리</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">도움말</div>
+        <a href="troubleshooting.html" class="nav-link">
+          <span class="nav-icon">&#128295;</span>
+          <span>문제 해결</span>
+        </a>
+        <a href="faq.html" class="nav-link">
+          <span class="nav-icon">&#10067;</span>
+          <span>자주 묻는 질문</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="index.html">홈</a>
+        <span class="breadcrumb-separator">&#8250;</span>
+        <a href="getting-started.html">시작하기</a>
+        <span class="breadcrumb-separator">&#8250;</span>
+        <span>Gmail 연결</span>
+      </div>
+
+      <header class="page-header">
+        <h1 class="page-title">&#128231; Gmail 연결하기</h1>
+        <p class="page-description">
+          Google 계정을 OAuth로 안전하게 연결하세요. 비밀번호 입력 없이 간편하게!
+        </p>
+      </header>
+
+      <!-- Why OAuth -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128274;</span> OAuth란?
+        </h2>
+        <div class="card-content">
+          <p>
+            OAuth는 <strong>비밀번호를 공유하지 않고</strong> 안전하게 앱에 권한을 부여하는 방식입니다.
+          </p>
+
+          <div class="alert alert-success" style="margin-top: 16px;">
+            <span class="alert-icon">&#9989;</span>
+            <div>
+              <strong>Gmail OAuth의 장점:</strong>
+              <ul style="margin-top: 8px; padding-left: 20px;">
+                <li>비밀번호를 D-Mail에 알려줄 필요 없음</li>
+                <li>언제든지 Google 계정에서 권한 해제 가능</li>
+                <li>메일 읽기/보내기 권한만 요청</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Connection Steps -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128221;</span> Gmail 연결 단계
+        </h2>
+        <div class="card-content">
+          <div class="steps">
+            <div class="step">
+              <h3 class="step-title">메일 추가 명령어 실행</h3>
+              <div class="step-content">
+                <p>Discord에서 D-Mail 봇에게 다음 명령어를 입력하세요:</p>
+                <div class="code-block">
+                  /메일 추가
+                </div>
+                <p style="margin-top: 8px;">또는 "메일 연결하기" 버튼을 클릭해도 됩니다.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">Gmail 주소 입력</h3>
+              <div class="step-content">
+                <p>팝업 창에서 연결할 Gmail 주소를 입력하세요.</p>
+                <div class="code-block">
+                  example@gmail.com
+                </div>
+                <p style="margin-top: 8px;">@gmail.com 또는 @googlemail.com 주소를 입력하면 자동으로 OAuth 방식으로 진행됩니다.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">"메일 소유 인증하기" 버튼 클릭</h3>
+              <div class="step-content">
+                <p>봇이 보내는 메시지에서 <strong>"메일 소유 인증하기"</strong> 버튼을 클릭하세요.</p>
+                <p style="margin-top: 8px;">버튼을 클릭하면 Google 로그인 페이지로 이동합니다.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">Google 계정 로그인</h3>
+              <div class="step-content">
+                <p>Google 로그인 페이지에서:</p>
+                <ol style="margin-top: 12px; padding-left: 24px;">
+                  <li style="margin-bottom: 8px;">연결할 Gmail 계정을 선택합니다</li>
+                  <li style="margin-bottom: 8px;">D-Mail의 권한 요청을 확인합니다</li>
+                  <li style="margin-bottom: 8px;"><strong>"허용"</strong> 버튼을 클릭합니다</li>
+                </ol>
+
+                <div class="alert alert-warning" style="margin-top: 16px;">
+                  <span class="alert-icon">&#9888;</span>
+                  <div>
+                    <strong>"이 앱은 확인되지 않았습니다"</strong> 경고가 나타날 수 있어요.
+                    <br>이 경우 "고급" &rarr; "안전하지 않은 페이지로 이동" 을 클릭하세요.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">연결 완료!</h3>
+              <div class="step-content">
+                <p>권한을 허용하면 자동으로 Discord로 돌아오고, 연결이 완료됩니다.</p>
+
+                <div class="alert alert-success" style="margin-top: 16px;">
+                  <span class="alert-icon">&#9989;</span>
+                  <div>
+                    <strong>연결 완료!</strong> 이제 새 Gmail이 도착하면 Discord DM으로 알림을 받게 됩니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- What D-Mail Can Access -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128270;</span> D-Mail이 접근하는 정보
+        </h2>
+        <div class="card-content">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>권한</th>
+                  <th>용도</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>이메일 메시지 읽기</td>
+                  <td>새 메일 도착 알림을 보내기 위해</td>
+                </tr>
+                <tr>
+                  <td>이메일 보내기</td>
+                  <td>/메일 작성 기능으로 메일 발송 시 사용</td>
+                </tr>
+                <tr>
+                  <td>이메일 메타데이터 확인</td>
+                  <td>발신자, 제목 등 정보 표시</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="alert alert-info" style="margin-top: 16px;">
+            <span class="alert-icon">&#128161;</span>
+            <div>
+              D-Mail은 메일 내용을 저장하지 않습니다. 알림 전송 후 메일 데이터는 삭제됩니다.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Troubleshooting -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128295;</span> 문제 해결
+        </h2>
+        <div class="card-content">
+          <h4 style="margin-bottom: 12px;">&#10067; "앱이 확인되지 않았습니다" 경고가 나타나요</h4>
+          <p style="margin-bottom: 20px;">
+            Google의 앱 검증 과정에 있어서 나타나는 정상적인 경고입니다.
+            "고급" 클릭 후 "안전하지 않은 페이지로 이동"을 선택하세요.
+          </p>
+
+          <h4 style="margin-bottom: 12px;">&#10067; 인증 버튼이 작동하지 않아요</h4>
+          <p style="margin-bottom: 20px;">
+            브라우저에서 팝업이 차단되었을 수 있어요. 팝업 차단을 해제하거나,
+            버튼 URL을 복사해서 직접 브라우저에 붙여넣기 해보세요.
+          </p>
+
+          <h4 style="margin-bottom: 12px;">&#10067; 연결 후 알림이 안 와요</h4>
+          <p>
+            연결 직후에는 기존 메일에 대한 알림이 오지 않습니다.
+            연결 이후에 도착하는 새 메일부터 알림이 발송됩니다.
+          </p>
+
+          <div style="margin-top: 24px;">
+            <a href="troubleshooting.html" class="btn btn-secondary">
+              &#128295; 더 많은 문제 해결 가이드
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Next Steps -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#127919;</span> 다음 단계
+        </h2>
+        <div class="card-content">
+          <div class="feature-grid">
+            <a href="notifications.html" class="feature-card">
+              <div class="feature-icon">&#128276;</div>
+              <h3 class="feature-title">알림 기능</h3>
+              <p class="feature-description">메일 알림이 어떻게 오는지 알아보기</p>
+            </a>
+
+            <a href="send-mail.html" class="feature-card">
+              <div class="feature-icon">&#9992;</div>
+              <h3 class="feature-title">메일 보내기</h3>
+              <p class="feature-description">Discord에서 메일 작성하고 보내기</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환">
+    <span id="theme-icon">&#127769;</span>
+  </button>
+
+  <script>
+    // Theme Toggle
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    }
+
+    function updateThemeIcon(theme) {
+      const icon = document.getElementById('theme-icon');
+      icon.innerHTML = theme === 'dark' ? '&#9728;' : '&#127769;';
+    }
+
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const icon = document.getElementById('menu-icon');
+      sidebar.classList.toggle('open');
+      icon.innerHTML = sidebar.classList.contains('open') ? '&#10005;' : '&#9776;';
+    }
+
+    document.addEventListener('click', function(e) {
+      const sidebar = document.getElementById('sidebar');
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+      if (window.innerWidth <= 768 &&
+          !sidebar.contains(e.target) &&
+          !menuBtn.contains(e.target) &&
+          sidebar.classList.contains('open')) {
+        toggleSidebar();
+      }
+    });
+  </script>
+</body>
+</html>

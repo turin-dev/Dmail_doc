@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D-Mail 사용 가이드</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" onclick="toggleSidebar()">
+    <span id="menu-icon">&#9776;</span>
+  </button>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon">&#9993;</div>
+          <span>D-Mail</span>
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">시작하기</div>
+        <a href="index.html" class="nav-link active">
+          <span class="nav-icon">&#127968;</span>
+          <span>홈</span>
+        </a>
+        <a href="getting-started.html" class="nav-link">
+          <span class="nav-icon">&#128640;</span>
+          <span>시작하기</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">메일 연결</div>
+        <a href="gmail-connect.html" class="nav-link">
+          <span class="nav-icon">&#128231;</span>
+          <span>Gmail 연결</span>
+        </a>
+        <a href="imap-connect.html" class="nav-link">
+          <span class="nav-icon">&#128233;</span>
+          <span>다른 메일 연결</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">기능 사용법</div>
+        <a href="notifications.html" class="nav-link">
+          <span class="nav-icon">&#128276;</span>
+          <span>알림 받기</span>
+        </a>
+        <a href="send-mail.html" class="nav-link">
+          <span class="nav-icon">&#9992;</span>
+          <span>메일 보내기</span>
+        </a>
+        <a href="manage-mail.html" class="nav-link">
+          <span class="nav-icon">&#9881;</span>
+          <span>메일 관리</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">도움말</div>
+        <a href="troubleshooting.html" class="nav-link">
+          <span class="nav-icon">&#128295;</span>
+          <span>문제 해결</span>
+        </a>
+        <a href="faq.html" class="nav-link">
+          <span class="nav-icon">&#10067;</span>
+          <span>자주 묻는 질문</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="page-header">
+        <h1 class="page-title">D-Mail 사용 가이드</h1>
+        <p class="page-description">
+          Discord에서 이메일을 실시간으로 받아보세요! D-Mail 봇의 모든 기능을 쉽게 배워보세요.
+        </p>
+      </header>
+
+      <!-- Feature Cards -->
+      <section class="feature-grid">
+        <a href="getting-started.html" class="feature-card">
+          <div class="feature-icon">&#128640;</div>
+          <h3 class="feature-title">시작하기</h3>
+          <p class="feature-description">D-Mail 봇을 처음 사용하시나요? 여기서 시작하세요.</p>
+        </a>
+
+        <a href="gmail-connect.html" class="feature-card">
+          <div class="feature-icon">&#128231;</div>
+          <h3 class="feature-title">Gmail 연결</h3>
+          <p class="feature-description">Google 계정으로 쉽고 안전하게 연결하세요.</p>
+        </a>
+
+        <a href="imap-connect.html" class="feature-card">
+          <div class="feature-icon">&#128233;</div>
+          <h3 class="feature-title">다른 메일 연결</h3>
+          <p class="feature-description">네이버, 다음 등 IMAP 메일을 연결하세요.</p>
+        </a>
+
+        <a href="notifications.html" class="feature-card">
+          <div class="feature-icon">&#128276;</div>
+          <h3 class="feature-title">알림 받기</h3>
+          <p class="feature-description">새 메일이 도착하면 DM으로 알림을 받으세요.</p>
+        </a>
+
+        <a href="send-mail.html" class="feature-card">
+          <div class="feature-icon">&#9992;</div>
+          <h3 class="feature-title">메일 보내기</h3>
+          <p class="feature-description">Discord에서 바로 이메일을 작성하고 보내세요.</p>
+        </a>
+
+        <a href="faq.html" class="feature-card">
+          <div class="feature-icon">&#10067;</div>
+          <h3 class="feature-title">자주 묻는 질문</h3>
+          <p class="feature-description">궁금한 점이 있으신가요? 여기서 답을 찾아보세요.</p>
+        </a>
+      </section>
+
+      <!-- Quick Start -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#9889;</span> 빠른 시작
+        </h2>
+        <div class="card-content">
+          <p>D-Mail을 사용하려면 다음 3단계만 따라하세요:</p>
+
+          <div class="steps" style="margin-top: 24px;">
+            <div class="step">
+              <h3 class="step-title">D-Mail 봇과 대화 시작</h3>
+              <div class="step-content">
+                Discord에서 D-Mail 봇에게 DM을 보내면 자동으로 온보딩이 시작됩니다.
+                또는 <code>/시작하기</code> 명령어를 입력하세요.
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">이메일 계정 연결</h3>
+              <div class="step-content">
+                <code>/메일 추가</code> 명령어로 Gmail 또는 다른 이메일을 연결하세요.
+                Gmail은 OAuth로 안전하게, 다른 메일은 앱 비밀번호로 연결됩니다.
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">알림 받기!</h3>
+              <div class="step-content">
+                이제 새 메일이 도착하면 Discord DM으로 실시간 알림을 받을 수 있어요.
+                인증 코드는 자동으로 추출되어 편리하게 확인할 수 있습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Support -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128172;</span> 도움이 필요하신가요?
+        </h2>
+        <div class="card-content">
+          <p>문제가 있거나 질문이 있으시면 언제든지 연락주세요!</p>
+          <div style="margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://discord.gg/Mf92KJtPCc" class="btn btn-primary" target="_blank">
+              &#128172; 서포트 서버 참가
+            </a>
+            <a href="faq.html" class="btn btn-secondary">
+              &#10067; FAQ 확인하기
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info Alert -->
+      <div class="alert alert-info">
+        <span class="alert-icon">&#128161;</span>
+        <div>
+          <strong>알고 계셨나요?</strong><br>
+          D-Mail은 30초마다 새 메일을 확인하고, 인증 코드가 포함된 메일은 자동으로 코드를 추출해서 보여드려요!
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환">
+    <span id="theme-icon">&#127769;</span>
+  </button>
+
+  <script>
+    // Theme Toggle
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    }
+
+    function updateThemeIcon(theme) {
+      const icon = document.getElementById('theme-icon');
+      icon.innerHTML = theme === 'dark' ? '&#9728;' : '&#127769;';
+    }
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    // Mobile Sidebar Toggle
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const icon = document.getElementById('menu-icon');
+      sidebar.classList.toggle('open');
+      icon.innerHTML = sidebar.classList.contains('open') ? '&#10005;' : '&#9776;';
+    }
+
+    // Close sidebar when clicking outside
+    document.addEventListener('click', function(e) {
+      const sidebar = document.getElementById('sidebar');
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+      if (window.innerWidth <= 768 &&
+          !sidebar.contains(e.target) &&
+          !menuBtn.contains(e.target) &&
+          sidebar.classList.contains('open')) {
+        toggleSidebar();
+      }
+    });
+  </script>
+</body>
+</html>
