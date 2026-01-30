@@ -32,6 +32,21 @@
   --card-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
+/* System Dark Mode Auto-detect */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-primary: #1e1f22;
+    --bg-secondary: #2b2d31;
+    --bg-tertiary: #313338;
+    --text-primary: #f2f3f5;
+    --text-secondary: #b5bac1;
+    --text-muted: #949ba4;
+    --border-color: #3f4147;
+    --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --card-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+}
+
 /* ===== Reset & Base ===== */
 *, *::before, *::after {
   box-sizing: border-box;
