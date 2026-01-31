@@ -75,6 +75,7 @@
           <span>자주 묻는 질문</span>
         </a>
       </div>
+
     </nav>
 
     <!-- Main Content -->
@@ -87,10 +88,18 @@
       </div>
 
       <header class="page-header">
-        <h1 class="page-title">&#128640; 시작하기</h1>
-        <p class="page-description">
-          D-Mail 봇을 처음 사용하시나요? 이 가이드를 따라 쉽게 시작해보세요!
-        </p>
+        <div class="page-header-content">
+          <h1 class="page-title">&#128640; 시작하기</h1>
+          <p class="page-description">
+            D-Mail 봇을 처음 사용하시나요? 이 가이드를 따라 쉽게 시작해보세요!
+          </p>
+        </div>
+        <!-- Theme Toggle -->
+        <div class="theme-toggle-wrapper">
+          <span class="theme-toggle-label">☀️</span>
+          <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환" aria-label="다크모드 전환"></button>
+          <span class="theme-toggle-label">🌙</span>
+        </div>
       </header>
 
       <!-- What is D-Mail -->
@@ -253,11 +262,6 @@
     </main>
   </div>
 
-  <!-- Theme Toggle -->
-  <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환">
-    <span id="theme-icon">&#127769;</span>
-  </button>
-
   <script>
     // Theme Toggle
     function toggleTheme() {
@@ -266,18 +270,11 @@
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       html.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
-      updateThemeIcon(newTheme);
-    }
-
-    function updateThemeIcon(theme) {
-      const icon = document.getElementById('theme-icon');
-      icon.innerHTML = theme === 'dark' ? '&#9728;' : '&#127769;';
     }
 
     // Load saved theme
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
 
     // Mobile Sidebar Toggle
     function toggleSidebar() {

@@ -75,6 +75,7 @@
           <span>자주 묻는 질문</span>
         </a>
       </div>
+
     </nav>
 
     <!-- Main Content -->
@@ -89,10 +90,18 @@
       </div>
 
       <header class="page-header">
-        <h1 class="page-title">&#128233; 다른 메일 연결하기</h1>
-        <p class="page-description">
-          네이버, 다음 등 IMAP을 지원하는 메일을 앱 비밀번호로 연결하세요.
-        </p>
+        <div class="page-header-content">
+          <h1 class="page-title">&#128233; 다른 메일 연결하기</h1>
+          <p class="page-description">
+            네이버, 다음 등 IMAP을 지원하는 메일을 앱 비밀번호로 연결하세요.
+          </p>
+        </div>
+        <!-- Theme Toggle -->
+        <div class="theme-toggle-wrapper">
+          <span class="theme-toggle-label">☀️</span>
+          <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환" aria-label="다크모드 전환"></button>
+          <span class="theme-toggle-label">🌙</span>
+        </div>
       </header>
 
       <!-- Supported Services -->
@@ -186,7 +195,7 @@
               <div class="step-content">
                 <p>네이버 메일에 로그인 후, <strong>환경설정</strong>으로 이동하세요.</p>
                 <p style="margin-top: 8px;">또는 아래 링크를 클릭하세요:</p>
-                <a href="https://mail.naver.com/v2/settings/pop3" target="_blank" class="btn btn-secondary" style="margin-top: 12px;">
+                <a href="https://mail.naver.com/v2/settings/smtp/imap" target="_blank" class="btn btn-secondary" style="margin-top: 12px;">
                   &#128279; 네이버 메일 설정
                 </a>
               </div>
@@ -358,11 +367,6 @@
     </main>
   </div>
 
-  <!-- Theme Toggle -->
-  <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환">
-    <span id="theme-icon">&#127769;</span>
-  </button>
-
   <script>
     function toggleTheme() {
       const html = document.documentElement;
@@ -370,17 +374,10 @@
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       html.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
-      updateThemeIcon(newTheme);
-    }
-
-    function updateThemeIcon(theme) {
-      const icon = document.getElementById('theme-icon');
-      icon.innerHTML = theme === 'dark' ? '&#9728;' : '&#127769;';
     }
 
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
 
     function toggleSidebar() {
       const sidebar = document.getElementById('sidebar');

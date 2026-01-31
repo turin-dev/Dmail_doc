@@ -75,6 +75,7 @@
           <span>자주 묻는 질문</span>
         </a>
       </div>
+
     </nav>
 
     <!-- Main Content -->
@@ -89,10 +90,18 @@
       </div>
 
       <header class="page-header">
-        <h1 class="page-title">&#128231; Gmail 연결하기</h1>
-        <p class="page-description">
-          Google 계정을 OAuth로 안전하게 연결하세요. 비밀번호 입력 없이 간편하게!
-        </p>
+        <div class="page-header-content">
+          <h1 class="page-title">&#128231; Gmail 연결하기</h1>
+          <p class="page-description">
+            Google 계정을 OAuth로 안전하게 연결하세요. 비밀번호 입력 없이 간편하게!
+          </p>
+        </div>
+        <!-- Theme Toggle -->
+        <div class="theme-toggle-wrapper">
+          <span class="theme-toggle-label">☀️</span>
+          <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환" aria-label="다크모드 전환"></button>
+          <span class="theme-toggle-label">🌙</span>
+        </div>
       </header>
 
       <!-- Why OAuth -->
@@ -289,11 +298,6 @@
     </main>
   </div>
 
-  <!-- Theme Toggle -->
-  <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환">
-    <span id="theme-icon">&#127769;</span>
-  </button>
-
   <script>
     // Theme Toggle
     function toggleTheme() {
@@ -302,17 +306,10 @@
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       html.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
-      updateThemeIcon(newTheme);
-    }
-
-    function updateThemeIcon(theme) {
-      const icon = document.getElementById('theme-icon');
-      icon.innerHTML = theme === 'dark' ? '&#9728;' : '&#127769;';
     }
 
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
 
     function toggleSidebar() {
       const sidebar = document.getElementById('sidebar');
