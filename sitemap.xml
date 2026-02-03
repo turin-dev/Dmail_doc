@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Sitemap for doc.emailbot.site
+    이 사이트맵은 검색 엔진이 사이트의 모든 페이지를 효율적으로 발견하고 크롤링할 수 있도록 돕습니다.
+    각 URL에는 우선순위(priority)와 변경 빈도(changefreq)가 설정되어 있습니다.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <!-- 메인 페이지 - 가장 높은 우선순위 -->
+    <url>
+        <loc>https://doc.emailbot.site/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- 시작 가이드 - 높은 우선순위 -->
+    <url>
+        <loc>https://doc.emailbot.site/getting-started.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Gmail 연결 가이드 -->
+    <url>
+        <loc>https://doc.emailbot.site/gmail-connect.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- IMAP 연결 가이드 -->
+    <url>
+        <loc>https://doc.emailbot.site/imap-connect.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 메일 관리 가이드 -->
+    <url>
+        <loc>https://doc.emailbot.site/manage-mail.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 메일 발송 가이드 -->
+    <url>
+        <loc>https://doc.emailbot.site/send-mail.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- 알림 설정 가이드 -->
+    <url>
+        <loc>https://doc.emailbot.site/notifications.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- 문제 해결 가이드 -->
+    <url>
+        <loc>https://doc.emailbot.site/troubleshooting.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+</urlset>
