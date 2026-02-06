@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>D-Mail 사용 가이드 | Discord 이메일 알림 봇</title>
-  <meta name="description" content="D-Mail은 Discord에서 이메일을 실시간으로 받아볼 수 있는 봇입니다. Gmail, 네이버, 다음 메일을 연결하고 인증코드 자동 추출 기능을 사용해보세요.">
-  <meta name="keywords" content="D-Mail, Discord, 이메일, 봇, Gmail, 네이버 메일, 다음 메일, 알림, 인증코드, Discord bot, email notification">
+  <title>D-Mail User Guide | Discord Email Notification Bot</title>
+  <meta name="description" content="D-Mail is a Discord bot that delivers real-time email notifications. Connect Gmail, Naver, and Daum mail to get alerts and auto-extract verification codes.">
+  <meta name="keywords" content="D-Mail, Discord, email, bot, Gmail, Naver mail, Daum mail, notifications, verification code, Discord bot, email notification">
   <meta name="author" content="D-Mail">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://doc.dmailbot.com/">
+  <link rel="canonical" href="https://doc.dmailbot.com/en/">
   <link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/">
   <link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/">
   <link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="D-Mail 사용 가이드 | Discord 이메일 알림 봇">
-  <meta property="og:description" content="D-Mail은 Discord에서 이메일을 실시간으로 받아볼 수 있는 봇입니다. Gmail, 네이버, 다음 메일 연결과 인증코드 자동 추출을 지원합니다.">
-  <meta property="og:url" content="https://doc.dmailbot.com/">
+  <meta property="og:title" content="D-Mail User Guide | Discord Email Notification Bot">
+  <meta property="og:description" content="D-Mail delivers real-time email notifications on Discord. Supports Gmail, Naver, Daum mail with AI verification code extraction.">
+  <meta property="og:url" content="https://doc.dmailbot.com/en/">
   <meta property="og:site_name" content="D-Mail">
-  <meta property="og:locale" content="ko_KR">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="D-Mail 사용 가이드 | Discord 이메일 알림 봇">
-  <meta name="twitter:description" content="Discord에서 이메일을 실시간으로 받아보세요! Gmail, 네이버, 다음 메일 연결과 인증코드 자동 추출 지원.">
+  <meta name="twitter:title" content="D-Mail User Guide | Discord Email Notification Bot">
+  <meta name="twitter:description" content="Get real-time email notifications on Discord! Supports Gmail, Naver, Daum mail with AI verification code extraction.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "D-Mail 사용 가이드",
+    "name": "D-Mail User Guide",
     "alternateName": "D-Mail Documentation",
-    "url": "https://doc.dmailbot.com/",
-    "description": "D-Mail Discord 봇의 공식 사용 가이드. Gmail, 네이버, 다음 메일 연결 및 실시간 알림 설정 방법을 안내합니다.",
-    "inLanguage": ["ko", "en"],
+    "url": "https://doc.dmailbot.com/en/",
+    "description": "Official user guide for the D-Mail Discord bot. Learn how to connect Gmail, Naver, Daum mail and set up real-time notifications.",
+    "inLanguage": ["en", "ko"],
     "publisher": {
       "@type": "Organization",
       "name": "D-Mail",
@@ -44,16 +44,16 @@
     "name": "D-Mail",
     "applicationCategory": "CommunicationApplication",
     "operatingSystem": "Discord",
-    "description": "Discord에서 이메일을 실시간으로 받아볼 수 있는 봇. Gmail, 네이버, 다음 메일 지원. AI 인증코드 자동 추출 기능 제공.",
+    "description": "A Discord bot for real-time email notifications. Supports Gmail, Naver, Daum mail. Features AI-powered verification code extraction.",
     "offers": {
       "@type": "Offer",
       "price": "0",
-      "priceCurrency": "KRW"
+      "priceCurrency": "USD"
     },
-    "featureList": ["실시간 이메일 알림", "AI 인증코드 자동 추출", "Gmail OAuth 연결", "네이버/다음 IMAP 연결", "Discord에서 메일 발송"]
+    "featureList": ["Real-time email notifications", "AI verification code extraction", "Gmail OAuth connection", "Naver/Daum IMAP connection", "Send emails from Discord"]
   }
   </script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
 </head>
@@ -71,61 +71,57 @@
           <div class="logo-icon">&#9993;</div>
           <span>D-Mail</span>
         </div>
-        <a href="en/index.html" class="lang-switch" title="Switch to English">
+        <a href="../index.html" class="lang-switch" title="한국어로 전환">
           <span class="lang-switch-icon">&#127760;</span>
-          EN
+          KO
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">시작하기</div>
+        <div class="nav-section-title">Getting Started</div>
         <a href="index.html" class="nav-link active">
           <span class="nav-icon">&#127968;</span>
-          <span>홈</span>
+          <span>Home</span>
         </a>
         <a href="getting-started.html" class="nav-link">
           <span class="nav-icon">&#128640;</span>
-          <span>시작하기</span>
+          <span>Getting Started</span>
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">메일 연결</div>
+        <div class="nav-section-title">Connect Email</div>
         <a href="gmail-connect.html" class="nav-link">
           <span class="nav-icon">&#128231;</span>
-          <span>Gmail 연결</span>
+          <span>Gmail Connect</span>
         </a>
         <a href="imap-connect.html" class="nav-link">
           <span class="nav-icon">&#128233;</span>
-          <span>다른 메일 연결</span>
+          <span>Other Email</span>
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">기능 사용법</div>
+        <div class="nav-section-title">Features</div>
         <a href="notifications.html" class="nav-link">
           <span class="nav-icon">&#128276;</span>
-          <span>알림 받기</span>
+          <span>Notifications</span>
         </a>
         <a href="send-mail.html" class="nav-link">
           <span class="nav-icon">&#9992;</span>
-          <span>메일 보내기</span>
+          <span>Send Email</span>
         </a>
         <a href="manage-mail.html" class="nav-link">
           <span class="nav-icon">&#9881;</span>
-          <span>메일 관리</span>
+          <span>Manage Email</span>
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">도움말</div>
+        <div class="nav-section-title">Help</div>
         <a href="troubleshooting.html" class="nav-link">
           <span class="nav-icon">&#128295;</span>
-          <span>문제 해결</span>
-        </a>
-        <a href="faq.html" class="nav-link">
-          <span class="nav-icon">&#10067;</span>
-          <span>자주 묻는 질문</span>
+          <span>Troubleshooting</span>
         </a>
       </div>
 
@@ -135,16 +131,16 @@
     <main class="main-content">
       <header class="page-header">
         <div class="page-header-content">
-          <h1 class="page-title">D-Mail 사용 가이드</h1>
+          <h1 class="page-title">D-Mail User Guide</h1>
           <p class="page-description">
-            Discord에서 이메일을 실시간으로 받아보세요! D-Mail 봇의 모든 기능을 쉽게 배워보세요.
+            Get real-time email notifications on Discord! Learn all the features of D-Mail bot easily.
           </p>
         </div>
-        <!-- Theme Toggle - Physical Switch -->
+        <!-- Theme Toggle -->
         <div class="theme-toggle-wrapper">
-          <span class="theme-toggle-label">☀️</span>
-          <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환" aria-label="다크모드 전환"></button>
-          <span class="theme-toggle-label">🌙</span>
+          <span class="theme-toggle-label">&#9728;&#65039;</span>
+          <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle dark mode"></button>
+          <span class="theme-toggle-label">&#127769;</span>
         </div>
       </header>
 
@@ -152,71 +148,71 @@
       <section class="feature-grid">
         <a href="getting-started.html" class="feature-card">
           <div class="feature-icon">&#128640;</div>
-          <h3 class="feature-title">시작하기</h3>
-          <p class="feature-description">D-Mail 봇을 처음 사용하시나요? 여기서 시작하세요.</p>
+          <h3 class="feature-title">Getting Started</h3>
+          <p class="feature-description">New to D-Mail? Start here.</p>
         </a>
 
         <a href="gmail-connect.html" class="feature-card">
           <div class="feature-icon">&#128231;</div>
-          <h3 class="feature-title">Gmail 연결</h3>
-          <p class="feature-description">Google 계정으로 쉽고 안전하게 연결하세요.</p>
+          <h3 class="feature-title">Gmail Connect</h3>
+          <p class="feature-description">Connect securely with your Google account.</p>
         </a>
 
         <a href="imap-connect.html" class="feature-card">
           <div class="feature-icon">&#128233;</div>
-          <h3 class="feature-title">다른 메일 연결</h3>
-          <p class="feature-description">네이버, 다음 등 IMAP 메일을 연결하세요.</p>
+          <h3 class="feature-title">Other Email</h3>
+          <p class="feature-description">Connect Naver, Daum, and other IMAP email.</p>
         </a>
 
         <a href="notifications.html" class="feature-card">
           <div class="feature-icon">&#128276;</div>
-          <h3 class="feature-title">알림 받기</h3>
-          <p class="feature-description">새 메일이 도착하면 DM으로 알림을 받으세요.</p>
+          <h3 class="feature-title">Notifications</h3>
+          <p class="feature-description">Get notified via DM when new mail arrives.</p>
         </a>
 
         <a href="send-mail.html" class="feature-card">
           <div class="feature-icon">&#9992;</div>
-          <h3 class="feature-title">메일 보내기</h3>
-          <p class="feature-description">Discord에서 바로 이메일을 작성하고 보내세요.</p>
+          <h3 class="feature-title">Send Email</h3>
+          <p class="feature-description">Compose and send emails from Discord.</p>
         </a>
 
-        <a href="faq.html" class="feature-card">
-          <div class="feature-icon">&#10067;</div>
-          <h3 class="feature-title">자주 묻는 질문</h3>
-          <p class="feature-description">궁금한 점이 있으신가요? 여기서 답을 찾아보세요.</p>
+        <a href="troubleshooting.html" class="feature-card">
+          <div class="feature-icon">&#128295;</div>
+          <h3 class="feature-title">Troubleshooting</h3>
+          <p class="feature-description">Having issues? Find solutions here.</p>
         </a>
       </section>
 
       <!-- Quick Start -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#9889;</span> 빠른 시작
+          <span>&#9889;</span> Quick Start
         </h2>
         <div class="card-content">
-          <p>D-Mail을 사용하려면 다음 3단계만 따라하세요:</p>
+          <p>Follow these 3 simple steps to start using D-Mail:</p>
 
           <div class="steps" style="margin-top: 24px;">
             <div class="step">
-              <h3 class="step-title">D-Mail 봇과 대화 시작</h3>
+              <h3 class="step-title">Start a DM with D-Mail Bot</h3>
               <div class="step-content">
-                Discord에서 D-Mail 봇에게 DM을 보내면 자동으로 온보딩이 시작됩니다.
-                또는 <code>/시작하기</code> 명령어를 입력하세요.
+                Send a DM to the D-Mail bot on Discord to start the onboarding process automatically.
+                Or use the <code>/start</code> command.
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">이메일 계정 연결</h3>
+              <h3 class="step-title">Connect Your Email</h3>
               <div class="step-content">
-                <code>/메일 추가</code> 명령어로 Gmail 또는 다른 이메일을 연결하세요.
-                Gmail은 OAuth로 안전하게, 다른 메일은 앱 비밀번호로 연결됩니다.
+                Use the <code>/mail add</code> command to connect Gmail or other email accounts.
+                Gmail connects securely via OAuth, while other providers use app passwords.
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">알림 받기!</h3>
+              <h3 class="step-title">Receive Notifications!</h3>
               <div class="step-content">
-                이제 새 메일이 도착하면 Discord DM으로 실시간 알림을 받을 수 있어요.
-                인증 코드는 자동으로 추출되어 편리하게 확인할 수 있습니다.
+                Now you'll receive real-time notifications via Discord DM when new emails arrive.
+                Verification codes are automatically extracted for your convenience.
               </div>
             </div>
           </div>
@@ -226,16 +222,16 @@
       <!-- Support -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128172;</span> 도움이 필요하신가요?
+          <span>&#128172;</span> Need Help?
         </h2>
         <div class="card-content">
-          <p>문제가 있거나 질문이 있으시면 언제든지 연락주세요!</p>
+          <p>If you have any questions or issues, feel free to reach out!</p>
           <div style="margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;">
             <a href="https://discord.gg/Mf92KJtPCc" class="btn btn-primary" target="_blank">
-              &#128172; 서포트 서버 참가
+              &#128172; Join Support Server
             </a>
-            <a href="faq.html" class="btn btn-secondary">
-              &#10067; FAQ 확인하기
+            <a href="troubleshooting.html" class="btn btn-secondary">
+              &#128295; Troubleshooting
             </a>
           </div>
         </div>
@@ -245,15 +241,14 @@
       <div class="alert alert-info">
         <span class="alert-icon">&#128161;</span>
         <div>
-          <strong>알고 계셨나요?</strong><br>
-          D-Mail은 30초마다 새 메일을 확인하고, 인증 코드가 포함된 메일은 자동으로 코드를 추출해서 보여드려요!
+          <strong>Did you know?</strong><br>
+          D-Mail checks for new emails every 30 seconds and automatically extracts verification codes from emails using AI!
         </div>
       </div>
     </main>
   </div>
 
   <script>
-    // Theme Toggle
     function toggleTheme() {
       const html = document.documentElement;
       const currentTheme = html.getAttribute('data-theme');
@@ -262,11 +257,9 @@
       localStorage.setItem('theme', newTheme);
     }
 
-    // Load saved theme
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
 
-    // Mobile Sidebar Toggle
     function toggleSidebar() {
       const sidebar = document.getElementById('sidebar');
       const icon = document.getElementById('menu-icon');
@@ -274,7 +267,6 @@
       icon.innerHTML = sidebar.classList.contains('open') ? '&#10005;' : '&#9776;';
     }
 
-    // Close sidebar when clicking outside
     document.addEventListener('click', function(e) {
       const sidebar = document.getElementById('sidebar');
       const menuBtn = document.querySelector('.mobile-menu-btn');

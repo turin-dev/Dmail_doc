@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>메일 보내기 - D-Mail | Discord에서 이메일 발송하기</title>
-  <meta name="description" content="Discord에서 D-Mail로 이메일을 작성하고 보내는 방법. 마크다운 지원, 첨부파일 추가, 여러 명에게 보내기 등 상세 가이드를 제공합니다.">
-  <meta name="keywords" content="D-Mail 메일 보내기, Discord 이메일 발송, Discord 메일 작성, Gmail 발송, send email Discord">
+  <title>Send Email - D-Mail | Send Emails from Discord</title>
+  <meta name="description" content="Learn how to compose and send emails from Discord using D-Mail. Supports markdown formatting, file attachments, multiple recipients, and more.">
+  <meta name="keywords" content="D-Mail send email, Discord email send, Discord compose mail, Gmail send, send email Discord bot">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://doc.dmailbot.com/send-mail.html">
+  <link rel="canonical" href="https://doc.dmailbot.com/en/send-mail.html">
   <link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/send-mail.html">
   <link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/send-mail.html">
   <link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/send-mail.html">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="메일 보내기 - D-Mail">
-  <meta property="og:description" content="Discord에서 D-Mail로 이메일을 작성하고 발송하는 방법을 안내합니다.">
-  <meta property="og:url" content="https://doc.dmailbot.com/send-mail.html">
+  <meta property="og:title" content="Send Email - D-Mail">
+  <meta property="og:description" content="Learn how to compose and send emails directly from Discord using D-Mail bot.">
+  <meta property="og:url" content="https://doc.dmailbot.com/en/send-mail.html">
   <meta property="og:site_name" content="D-Mail">
-  <meta property="og:locale" content="ko_KR">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="메일 보내기 - D-Mail">
-  <meta name="twitter:description" content="Discord에서 D-Mail로 이메일을 작성하고 발송하는 방법 안내.">
+  <meta name="twitter:title" content="Send Email - D-Mail">
+  <meta name="twitter:description" content="Learn how to compose and send emails directly from Discord using D-Mail bot.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    "name": "D-Mail로 메일 보내기",
-    "description": "Discord에서 D-Mail 봇을 사용하여 이메일을 작성하고 발송하는 방법",
+    "name": "Send Email with D-Mail",
+    "description": "How to compose and send emails from Discord using the D-Mail bot",
     "step": [
-      {"@type": "HowToStep", "name": "메일 작성 명령어 실행", "text": "Discord에서 /메일 작성 명령어를 입력합니다."},
-      {"@type": "HowToStep", "name": "발신 계정 선택", "text": "여러 Gmail 계정이 있다면 보낼 계정을 선택합니다."},
-      {"@type": "HowToStep", "name": "내용 입력", "text": "받는 사람, 제목, 본문을 입력합니다. 마크다운을 지원합니다."},
-      {"@type": "HowToStep", "name": "첨부파일 추가", "text": "DM에 파일을 업로드하면 자동으로 첨부됩니다. 최대 8개, 총 20MB."},
-      {"@type": "HowToStep", "name": "보내기", "text": "보내기 버튼을 클릭하면 메일이 발송됩니다."}
+      {"@type": "HowToStep", "name": "Run the compose command", "text": "Type the /mail compose command in Discord."},
+      {"@type": "HowToStep", "name": "Select sender account", "text": "If you have multiple Gmail accounts connected, select the one to send from."},
+      {"@type": "HowToStep", "name": "Review the compose panel", "text": "The bot sends a compose panel via DM where you can review and edit recipient, subject, and body."},
+      {"@type": "HowToStep", "name": "Add attachments", "text": "Upload files in the DM to attach them automatically. Max 8 files, 20MB total."},
+      {"@type": "HowToStep", "name": "Send the email", "text": "Click the Send button to deliver your email."}
     ]
   }
   </script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
 </head>
@@ -53,61 +53,57 @@
           <div class="logo-icon">&#9993;</div>
           <span>D-Mail</span>
         </div>
-        <a href="en/send-mail.html" class="lang-switch" title="Switch to English">
+        <a href="../send-mail.html" class="lang-switch" title="한국어로 전환">
           <span class="lang-switch-icon">&#127760;</span>
-          EN
+          KO
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">시작하기</div>
+        <div class="nav-section-title">Getting Started</div>
         <a href="index.html" class="nav-link">
           <span class="nav-icon">&#127968;</span>
-          <span>홈</span>
+          <span>Home</span>
         </a>
         <a href="getting-started.html" class="nav-link">
           <span class="nav-icon">&#128640;</span>
-          <span>시작하기</span>
+          <span>Getting Started</span>
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">메일 연결</div>
+        <div class="nav-section-title">Connect Email</div>
         <a href="gmail-connect.html" class="nav-link">
           <span class="nav-icon">&#128231;</span>
-          <span>Gmail 연결</span>
+          <span>Gmail Connect</span>
         </a>
         <a href="imap-connect.html" class="nav-link">
           <span class="nav-icon">&#128233;</span>
-          <span>다른 메일 연결</span>
+          <span>Other Email</span>
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">기능 사용법</div>
+        <div class="nav-section-title">Features</div>
         <a href="notifications.html" class="nav-link">
           <span class="nav-icon">&#128276;</span>
-          <span>알림 받기</span>
+          <span>Notifications</span>
         </a>
         <a href="send-mail.html" class="nav-link active">
           <span class="nav-icon">&#9992;</span>
-          <span>메일 보내기</span>
+          <span>Send Email</span>
         </a>
         <a href="manage-mail.html" class="nav-link">
           <span class="nav-icon">&#9881;</span>
-          <span>메일 관리</span>
+          <span>Manage Email</span>
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">도움말</div>
+        <div class="nav-section-title">Help</div>
         <a href="troubleshooting.html" class="nav-link">
           <span class="nav-icon">&#128295;</span>
-          <span>문제 해결</span>
-        </a>
-        <a href="faq.html" class="nav-link">
-          <span class="nav-icon">&#10067;</span>
-          <span>자주 묻는 질문</span>
+          <span>Troubleshooting</span>
         </a>
       </div>
 
@@ -117,23 +113,23 @@
     <main class="main-content">
       <!-- Breadcrumb -->
       <div class="breadcrumb">
-        <a href="index.html">홈</a>
+        <a href="index.html">Home</a>
         <span class="breadcrumb-separator">&#8250;</span>
-        <span>메일 보내기</span>
+        <span>Send Email</span>
       </div>
 
       <header class="page-header">
         <div class="page-header-content">
-          <h1 class="page-title">&#9992; 메일 보내기</h1>
+          <h1 class="page-title">&#9992; Send Email</h1>
           <p class="page-description">
-            Discord에서 바로 이메일을 작성하고 보내세요!
+            Compose and send emails directly from Discord!
           </p>
         </div>
         <!-- Theme Toggle -->
         <div class="theme-toggle-wrapper">
-          <span class="theme-toggle-label">☀️</span>
-          <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환" aria-label="다크모드 전환"></button>
-          <span class="theme-toggle-label">🌙</span>
+          <span class="theme-toggle-label">&#9728;&#65039;</span>
+          <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle dark mode"></button>
+          <span class="theme-toggle-label">&#127769;</span>
         </div>
       </header>
 
@@ -141,81 +137,81 @@
       <div class="alert alert-warning">
         <span class="alert-icon">&#9888;</span>
         <div>
-          <strong>Gmail 전용 기능:</strong> 현재 메일 발송은 Gmail 계정에서만 지원됩니다.
-          네이버, 다음 등 IMAP 계정은 메일 수신 알림만 가능합니다.
+          <strong>Gmail Only Feature:</strong> Email sending is currently supported only with Gmail accounts.
+          Naver, Daum, and other IMAP accounts only support receiving email notifications.
         </div>
       </div>
 
       <!-- How to Send -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128221;</span> 메일 보내기 튜토리얼
+          <span>&#128221;</span> Send Email Tutorial
         </h2>
         <div class="card-content">
           <div class="steps">
             <div class="step">
-              <h3 class="step-title">메일 작성 명령어 실행</h3>
+              <h3 class="step-title">Run the Compose Command</h3>
               <div class="step-content">
-                <p>Discord에서 다음 명령어를 입력하세요:</p>
+                <p>Type the following command in Discord:</p>
                 <div class="code-block">
-                  /메일 작성
+                  /mail compose
                 </div>
-                <p style="margin-top: 8px;">또는 알림 메시지의 "답장하기" 버튼을 클릭해도 됩니다.</p>
+                <p style="margin-top: 8px;">You can also click the "Reply" button on a notification message.</p>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">발신 계정 선택</h3>
+              <h3 class="step-title">Select Sender Account</h3>
               <div class="step-content">
-                <p>여러 Gmail 계정이 연결되어 있다면, 보낼 계정을 선택하세요.</p>
-                <p style="margin-top: 8px;">계정이 하나만 있으면 자동으로 선택됩니다.</p>
+                <p>If you have multiple Gmail accounts connected, select the account you want to send from.</p>
+                <p style="margin-top: 8px;">If you only have one account, it will be selected automatically.</p>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">메일 작성 패널 확인</h3>
+              <h3 class="step-title">Review the Compose Panel</h3>
               <div class="step-content">
-                <p>봇이 DM으로 <strong>메일 작성 패널</strong>을 보냅니다.</p>
-                <p style="margin-top: 8px;">패널에서 받는 사람, 제목, 본문을 확인하고 수정할 수 있어요.</p>
+                <p>The bot will send a <strong>Compose Panel</strong> via DM.</p>
+                <p style="margin-top: 8px;">You can review and edit the recipient, subject, and body from the panel.</p>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">내용 입력</h3>
+              <h3 class="step-title">Fill in the Content</h3>
               <div class="step-content">
-                <p><strong>&#9999; 버튼</strong>을 클릭해서 메일 내용을 입력하세요:</p>
+                <p>Click the <strong>&#9999; button</strong> to enter your email content:</p>
                 <ul style="margin-top: 12px; padding-left: 24px;">
-                  <li style="margin-bottom: 8px;"><strong>받는 사람:</strong> 수신자 이메일 (쉼표로 여러 명 가능)</li>
-                  <li style="margin-bottom: 8px;"><strong>제목:</strong> 메일 제목</li>
-                  <li style="margin-bottom: 8px;"><strong>본문:</strong> 메일 내용 (마크다운 지원!)</li>
+                  <li style="margin-bottom: 8px;"><strong>To:</strong> Recipient email address (comma-separated for multiple)</li>
+                  <li style="margin-bottom: 8px;"><strong>Subject:</strong> Email subject line</li>
+                  <li style="margin-bottom: 8px;"><strong>Body:</strong> Email content (markdown supported!)</li>
                 </ul>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">첨부파일 추가 (선택)</h3>
+              <h3 class="step-title">Add Attachments (Optional)</h3>
               <div class="step-content">
-                <p>첨부파일을 추가하려면 DM에 파일을 업로드하세요.</p>
-                <p style="margin-top: 8px;">자동으로 작성 중인 메일에 첨부됩니다.</p>
+                <p>To add attachments, upload files in the DM chat.</p>
+                <p style="margin-top: 8px;">They will be automatically attached to the email you are composing.</p>
 
                 <div class="alert alert-info" style="margin-top: 12px;">
                   <span class="alert-icon">&#128161;</span>
                   <div>
-                    <strong>첨부파일 제한:</strong> 최대 8개 / 총 20MB까지
+                    <strong>Attachment Limits:</strong> Maximum 8 files / 20MB total
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">보내기!</h3>
+              <h3 class="step-title">Send!</h3>
               <div class="step-content">
-                <p><strong>"보내기"</strong> 버튼을 클릭하면 메일이 발송됩니다.</p>
+                <p>Click the <strong>"Send"</strong> button to deliver your email.</p>
 
                 <div class="alert alert-success" style="margin-top: 16px;">
                   <span class="alert-icon">&#9989;</span>
                   <div>
-                    발송이 완료되면 "전송 완료" 메시지가 표시됩니다.
+                    Once the email is sent successfully, a "Sent Successfully" confirmation message will appear.
                   </div>
                 </div>
               </div>
@@ -227,25 +223,25 @@
       <!-- Compose Panel Example -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128172;</span> 작성 패널 예시
+          <span>&#128172;</span> Compose Panel Example
         </h2>
         <div class="card-content">
           <div style="background: var(--bg-tertiary); border-radius: 8px; padding: 20px; border-left: 4px solid #2ecc71;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-              <h3 style="font-size: 1.1rem;">&#9993; 메일 작성 패널</h3>
-              <span style="background: var(--success-color); color: white; padding: 8px 16px; border-radius: 4px; font-size: 0.9rem;">보내기</span>
+              <h3 style="font-size: 1.1rem;">&#9993; Compose Email Panel</h3>
+              <span style="background: var(--success-color); color: white; padding: 8px 16px; border-radius: 4px; font-size: 0.9rem;">Send</span>
             </div>
             <ul style="list-style: none; margin-bottom: 16px;">
-              <li style="margin-bottom: 8px;"><strong>받는 사람:</strong> recipient@example.com</li>
-              <li style="margin-bottom: 8px;"><strong>보내는 사람:</strong> user@gmail.com</li>
+              <li style="margin-bottom: 8px;"><strong>To:</strong> recipient@example.com</li>
+              <li style="margin-bottom: 8px;"><strong>From:</strong> user@gmail.com</li>
             </ul>
             <div style="background: var(--bg-secondary); padding: 16px; border-radius: 6px; margin-bottom: 16px;">
-              <h4 style="font-size: 1rem; margin-bottom: 8px;">안녕하세요!</h4>
-              <p style="color: var(--text-secondary);">메일 본문 내용이 여기에 표시됩니다.</p>
+              <h4 style="font-size: 1rem; margin-bottom: 8px;">Hello!</h4>
+              <p style="color: var(--text-secondary);">Your email body content will be displayed here.</p>
             </div>
             <div style="margin-bottom: 12px;">
-              <p style="font-size: 0.9rem; color: var(--text-muted);">&#128206; 첨부파일</p>
-              <p style="color: var(--text-secondary);">없음</p>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">&#128206; Attachments</p>
+              <p style="color: var(--text-secondary);">None</p>
             </div>
             <span style="background: var(--accent-color); color: white; padding: 8px 16px; border-radius: 4px; font-size: 0.9rem;">&#9999;</span>
           </div>
@@ -255,39 +251,39 @@
       <!-- Markdown Support -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128195;</span> 마크다운 지원
+          <span>&#128195;</span> Markdown Support
         </h2>
         <div class="card-content">
-          <p>메일 본문에서 마크다운 문법을 사용할 수 있어요!</p>
+          <p>You can use markdown syntax in the email body!</p>
 
           <div class="table-wrapper" style="margin-top: 16px;">
             <table>
               <thead>
                 <tr>
-                  <th>입력</th>
-                  <th>결과</th>
+                  <th>Input</th>
+                  <th>Result</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><code>**굵게**</code></td>
-                  <td><strong>굵게</strong></td>
+                  <td><code>**bold**</code></td>
+                  <td><strong>bold</strong></td>
                 </tr>
                 <tr>
-                  <td><code>*기울임*</code></td>
-                  <td><em>기울임</em></td>
+                  <td><code>*italic*</code></td>
+                  <td><em>italic</em></td>
                 </tr>
                 <tr>
-                  <td><code># 제목</code></td>
-                  <td>큰 제목</td>
+                  <td><code># heading</code></td>
+                  <td>Large heading</td>
                 </tr>
                 <tr>
-                  <td><code>[링크](url)</code></td>
-                  <td>클릭 가능한 링크</td>
+                  <td><code>[link](url)</code></td>
+                  <td>Clickable link</td>
                 </tr>
                 <tr>
-                  <td><code>`코드`</code></td>
-                  <td><code>코드</code> 스타일</td>
+                  <td><code>`code`</code></td>
+                  <td><code>code</code> style</td>
                 </tr>
               </tbody>
             </table>
@@ -298,15 +294,15 @@
       <!-- Multiple Recipients -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128101;</span> 여러 명에게 보내기
+          <span>&#128101;</span> Multiple Recipients
         </h2>
         <div class="card-content">
-          <p>받는 사람 칸에 쉼표(,)로 구분해서 여러 주소를 입력하세요:</p>
+          <p>Separate multiple email addresses with commas in the "To" field:</p>
           <div class="code-block">
             user1@example.com, user2@example.com, user3@example.com
           </div>
           <p style="margin-top: 12px; color: var(--text-muted);">
-            각 수신자에게 동일한 메일이 발송됩니다.
+            The same email will be sent to each recipient.
           </p>
         </div>
       </div>
@@ -314,19 +310,19 @@
       <!-- Tips -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128161;</span> 팁
+          <span>&#128161;</span> Tips
         </h2>
         <div class="card-content">
           <ul style="padding-left: 24px;">
             <li style="margin-bottom: 12px;">
-              <strong>최신 패널 사용:</strong> 여러 개의 작성 패널이 있다면 가장 최근 패널만 사용하세요.
-              이전 패널은 작동하지 않습니다.
+              <strong>Use the latest panel:</strong> If you have multiple compose panels open, only use the most recent one.
+              Previous panels will no longer function.
             </li>
             <li style="margin-bottom: 12px;">
-              <strong>첨부파일:</strong> 이미지, 문서, 압축파일 등 다양한 파일을 첨부할 수 있어요.
+              <strong>Attachments:</strong> You can attach various file types including images, documents, and archives.
             </li>
             <li style="margin-bottom: 12px;">
-              <strong>발송 취소:</strong> 한 번 보낸 메일은 취소할 수 없으니 신중하게 확인 후 보내세요!
+              <strong>Cannot cancel:</strong> Once an email is sent, it cannot be cancelled or recalled. Please review carefully before sending!
             </li>
           </ul>
         </div>
@@ -335,23 +331,23 @@
       <!-- Troubleshooting -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128295;</span> 문제 해결
+          <span>&#128295;</span> Troubleshooting
         </h2>
         <div class="card-content">
-          <h4 style="margin-bottom: 12px;">&#10067; "연결된 메일 계정이 없어요" 메시지가 나와요</h4>
+          <h4 style="margin-bottom: 12px;">&#10067; "No connected email account" error</h4>
           <p style="margin-bottom: 20px;">
-            Gmail 계정이 연결되어 있어야 합니다. <code>/메일 추가</code>로 Gmail을 연결해주세요.
+            You need a Gmail account connected. Use <code>/mail add</code> to connect your Gmail account.
           </p>
 
-          <h4 style="margin-bottom: 12px;">&#10067; 메일 발송에 실패했어요</h4>
+          <h4 style="margin-bottom: 12px;">&#10067; Email sending failed</h4>
           <p style="margin-bottom: 20px;">
-            OAuth 인증이 만료되었을 수 있어요. <code>/메일 관리</code>에서 계정을 확인하고,
-            필요하면 다시 연결해주세요.
+            Your OAuth authentication may have expired. Check your account in <code>/mail manage</code> and
+            reconnect if necessary.
           </p>
 
-          <h4 style="margin-bottom: 12px;">&#10067; 첨부파일이 추가되지 않아요</h4>
+          <h4 style="margin-bottom: 12px;">&#10067; Attachments are not being added</h4>
           <p>
-            파일 크기가 20MB를 초과하거나, 이미 8개의 파일이 첨부된 경우 추가할 수 없어요.
+            Files cannot be added if the total size exceeds 20MB or if 8 files are already attached.
           </p>
         </div>
       </div>
@@ -359,20 +355,20 @@
       <!-- Next Steps -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#127919;</span> 다음 단계
+          <span>&#127919;</span> Next Steps
         </h2>
         <div class="card-content">
           <div class="feature-grid">
             <a href="manage-mail.html" class="feature-card">
               <div class="feature-icon">&#9881;</div>
-              <h3 class="feature-title">메일 관리</h3>
-              <p class="feature-description">연결된 메일 관리하기</p>
+              <h3 class="feature-title">Manage Email</h3>
+              <p class="feature-description">Manage your connected email accounts</p>
             </a>
 
             <a href="troubleshooting.html" class="feature-card">
               <div class="feature-icon">&#128295;</div>
-              <h3 class="feature-title">문제 해결</h3>
-              <p class="feature-description">자주 발생하는 문제 해결하기</p>
+              <h3 class="feature-title">Troubleshooting</h3>
+              <p class="feature-description">Resolve common issues</p>
             </a>
           </div>
         </div>

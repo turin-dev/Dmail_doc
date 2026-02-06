@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gmail 연결 가이드 - D-Mail | OAuth로 안전하게 Gmail 연동</title>
-  <meta name="description" content="D-Mail에 Gmail을 OAuth로 안전하게 연결하는 방법. 비밀번호 입력 없이 Google 계정을 연동하고 Discord에서 Gmail 알림을 받으세요.">
-  <meta name="keywords" content="D-Mail Gmail 연결, Discord Gmail 연동, OAuth 인증, Gmail 알림, Discord email notification, Gmail bot">
+  <title>Gmail Connection Guide - D-Mail | Connect Gmail Securely with OAuth</title>
+  <meta name="description" content="Learn how to securely connect Gmail to D-Mail using OAuth. No password sharing required - connect your Google account and receive Gmail notifications on Discord.">
+  <meta name="keywords" content="D-Mail Gmail connect, Discord Gmail integration, OAuth authentication, Gmail notifications, Discord email notification, Gmail bot">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://doc.dmailbot.com/gmail-connect.html">
+  <link rel="canonical" href="https://doc.dmailbot.com/en/gmail-connect.html">
   <link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/gmail-connect.html">
   <link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/gmail-connect.html">
   <link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/gmail-connect.html">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Gmail 연결 가이드 - D-Mail">
-  <meta property="og:description" content="D-Mail에 Gmail을 OAuth로 안전하게 연결하는 방법을 단계별로 안내합니다.">
-  <meta property="og:url" content="https://doc.dmailbot.com/gmail-connect.html">
+  <meta property="og:title" content="Gmail Connection Guide - D-Mail">
+  <meta property="og:description" content="Learn how to securely connect Gmail to D-Mail using OAuth, step by step.">
+  <meta property="og:url" content="https://doc.dmailbot.com/en/gmail-connect.html">
   <meta property="og:site_name" content="D-Mail">
-  <meta property="og:locale" content="ko_KR">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Gmail 연결 가이드 - D-Mail">
-  <meta name="twitter:description" content="D-Mail에 Gmail을 OAuth로 안전하게 연결하는 방법. 비밀번호 없이 간편하게!">
+  <meta name="twitter:title" content="Gmail Connection Guide - D-Mail">
+  <meta name="twitter:description" content="Connect Gmail to D-Mail securely with OAuth. No password needed!">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    "name": "D-Mail에 Gmail 연결하기",
-    "description": "Google OAuth를 사용하여 D-Mail에 Gmail 계정을 안전하게 연결하는 방법",
+    "name": "Connect Gmail to D-Mail",
+    "description": "How to securely connect your Gmail account to D-Mail using Google OAuth",
     "step": [
-      {"@type": "HowToStep", "name": "메일 추가 명령어 실행", "text": "Discord에서 /메일 추가 명령어를 입력합니다."},
-      {"@type": "HowToStep", "name": "Gmail 주소 입력", "text": "연결할 Gmail 주소를 입력합니다."},
-      {"@type": "HowToStep", "name": "메일 소유 인증하기 버튼 클릭", "text": "봇이 보내는 메시지에서 인증 버튼을 클릭합니다."},
-      {"@type": "HowToStep", "name": "Google 계정 로그인", "text": "Google 로그인 페이지에서 계정을 선택하고 권한을 허용합니다."},
-      {"@type": "HowToStep", "name": "연결 완료", "text": "권한을 허용하면 자동으로 연결이 완료됩니다."}
+      {"@type": "HowToStep", "name": "Run the mail add command", "text": "Type the /mail add command in Discord."},
+      {"@type": "HowToStep", "name": "Enter your Gmail address", "text": "Enter the Gmail address you want to connect."},
+      {"@type": "HowToStep", "name": "Click the verify button", "text": "Click the verification button in the message sent by the bot."},
+      {"@type": "HowToStep", "name": "Log in to Google", "text": "Select your account on the Google login page and grant permissions."},
+      {"@type": "HowToStep", "name": "Connection complete", "text": "Once permissions are granted, the connection is automatically completed."}
     ]
   }
   </script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
 </head>
@@ -53,61 +53,57 @@
           <div class="logo-icon">&#9993;</div>
           <span>D-Mail</span>
         </div>
-        <a href="en/gmail-connect.html" class="lang-switch" title="Switch to English">
+        <a href="../gmail-connect.html" class="lang-switch" title="한국어로 전환">
           <span class="lang-switch-icon">&#127760;</span>
-          EN
+          KO
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">시작하기</div>
+        <div class="nav-section-title">Getting Started</div>
         <a href="index.html" class="nav-link">
           <span class="nav-icon">&#127968;</span>
-          <span>홈</span>
+          <span>Home</span>
         </a>
         <a href="getting-started.html" class="nav-link">
           <span class="nav-icon">&#128640;</span>
-          <span>시작하기</span>
+          <span>Getting Started</span>
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">메일 연결</div>
+        <div class="nav-section-title">Connect Email</div>
         <a href="gmail-connect.html" class="nav-link active">
           <span class="nav-icon">&#128231;</span>
-          <span>Gmail 연결</span>
+          <span>Gmail Connect</span>
         </a>
         <a href="imap-connect.html" class="nav-link">
           <span class="nav-icon">&#128233;</span>
-          <span>다른 메일 연결</span>
+          <span>Other Email</span>
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">기능 사용법</div>
+        <div class="nav-section-title">Features</div>
         <a href="notifications.html" class="nav-link">
           <span class="nav-icon">&#128276;</span>
-          <span>알림 받기</span>
+          <span>Notifications</span>
         </a>
         <a href="send-mail.html" class="nav-link">
           <span class="nav-icon">&#9992;</span>
-          <span>메일 보내기</span>
+          <span>Send Email</span>
         </a>
         <a href="manage-mail.html" class="nav-link">
           <span class="nav-icon">&#9881;</span>
-          <span>메일 관리</span>
+          <span>Manage Email</span>
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">도움말</div>
+        <div class="nav-section-title">Help</div>
         <a href="troubleshooting.html" class="nav-link">
           <span class="nav-icon">&#128295;</span>
-          <span>문제 해결</span>
-        </a>
-        <a href="faq.html" class="nav-link">
-          <span class="nav-icon">&#10067;</span>
-          <span>자주 묻는 질문</span>
+          <span>Troubleshooting</span>
         </a>
       </div>
 
@@ -117,46 +113,46 @@
     <main class="main-content">
       <!-- Breadcrumb -->
       <div class="breadcrumb">
-        <a href="index.html">홈</a>
+        <a href="index.html">Home</a>
         <span class="breadcrumb-separator">&#8250;</span>
-        <a href="getting-started.html">시작하기</a>
+        <a href="getting-started.html">Getting Started</a>
         <span class="breadcrumb-separator">&#8250;</span>
-        <span>Gmail 연결</span>
+        <span>Gmail Connect</span>
       </div>
 
       <header class="page-header">
         <div class="page-header-content">
-          <h1 class="page-title">&#128231; Gmail 연결하기</h1>
+          <h1 class="page-title">&#128231; Connect Gmail</h1>
           <p class="page-description">
-            Google 계정을 OAuth로 안전하게 연결하세요. 비밀번호 입력 없이 간편하게!
+            Securely connect your Google account with OAuth. No password sharing required!
           </p>
         </div>
         <!-- Theme Toggle -->
         <div class="theme-toggle-wrapper">
-          <span class="theme-toggle-label">☀️</span>
-          <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환" aria-label="다크모드 전환"></button>
-          <span class="theme-toggle-label">🌙</span>
+          <span class="theme-toggle-label">&#9728;&#65039;</span>
+          <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle dark mode"></button>
+          <span class="theme-toggle-label">&#127769;</span>
         </div>
       </header>
 
       <!-- Why OAuth -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128274;</span> OAuth란?
+          <span>&#128274;</span> What is OAuth?
         </h2>
         <div class="card-content">
           <p>
-            OAuth는 <strong>비밀번호를 공유하지 않고</strong> 안전하게 앱에 권한을 부여하는 방식입니다.
+            OAuth is a method that allows you to <strong>grant app permissions without sharing your password</strong>.
           </p>
 
           <div class="alert alert-success" style="margin-top: 16px;">
             <span class="alert-icon">&#9989;</span>
             <div>
-              <strong>Gmail OAuth의 장점:</strong>
+              <strong>Benefits of Gmail OAuth:</strong>
               <ul style="margin-top: 8px; padding-left: 20px;">
-                <li>비밀번호를 D-Mail에 알려줄 필요 없음</li>
-                <li>언제든지 Google 계정에서 권한 해제 가능</li>
-                <li>메일 읽기/보내기 권한만 요청</li>
+                <li>No need to share your password with D-Mail</li>
+                <li>Revoke access anytime from your Google account</li>
+                <li>Only email read/send permissions are requested</li>
               </ul>
             </div>
           </div>
@@ -166,69 +162,69 @@
       <!-- Connection Steps -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128221;</span> Gmail 연결 단계
+          <span>&#128221;</span> Gmail Connection Steps
         </h2>
         <div class="card-content">
           <div class="steps">
             <div class="step">
-              <h3 class="step-title">메일 추가 명령어 실행</h3>
+              <h3 class="step-title">Run the Mail Add Command</h3>
               <div class="step-content">
-                <p>Discord에서 D-Mail 봇에게 다음 명령어를 입력하세요:</p>
+                <p>Type the following command to the D-Mail bot in Discord:</p>
                 <div class="code-block">
-                  /메일 추가
+                  /mail add
                 </div>
-                <p style="margin-top: 8px;">또는 "메일 연결하기" 버튼을 클릭해도 됩니다.</p>
+                <p style="margin-top: 8px;">Or you can click the "Connect Email" button.</p>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">Gmail 주소 입력</h3>
+              <h3 class="step-title">Enter Your Gmail Address</h3>
               <div class="step-content">
-                <p>팝업 창에서 연결할 Gmail 주소를 입력하세요.</p>
+                <p>Enter the Gmail address you want to connect in the popup window.</p>
                 <div class="code-block">
                   example@gmail.com
                 </div>
-                <p style="margin-top: 8px;">@gmail.com 또는 @googlemail.com 주소를 입력하면 자동으로 OAuth 방식으로 진행됩니다.</p>
+                <p style="margin-top: 8px;">Entering an @gmail.com or @googlemail.com address will automatically proceed with the OAuth method.</p>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">"메일 소유 인증하기" 버튼 클릭</h3>
+              <h3 class="step-title">Click the "Verify Email Ownership" Button</h3>
               <div class="step-content">
-                <p>봇이 보내는 메시지에서 <strong>"메일 소유 인증하기"</strong> 버튼을 클릭하세요.</p>
-                <p style="margin-top: 8px;">버튼을 클릭하면 Google 로그인 페이지로 이동합니다.</p>
+                <p>Click the <strong>"Verify Email Ownership"</strong> button in the message from the bot.</p>
+                <p style="margin-top: 8px;">Clicking the button will redirect you to the Google login page.</p>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">Google 계정 로그인</h3>
+              <h3 class="step-title">Log in to Google</h3>
               <div class="step-content">
-                <p>Google 로그인 페이지에서:</p>
+                <p>On the Google login page:</p>
                 <ol style="margin-top: 12px; padding-left: 24px;">
-                  <li style="margin-bottom: 8px;">연결할 Gmail 계정을 선택합니다</li>
-                  <li style="margin-bottom: 8px;">D-Mail의 권한 요청을 확인합니다</li>
-                  <li style="margin-bottom: 8px;"><strong>"허용"</strong> 버튼을 클릭합니다</li>
+                  <li style="margin-bottom: 8px;">Select the Gmail account you want to connect</li>
+                  <li style="margin-bottom: 8px;">Review D-Mail's permission request</li>
+                  <li style="margin-bottom: 8px;">Click the <strong>"Allow"</strong> button</li>
                 </ol>
 
                 <div class="alert alert-warning" style="margin-top: 16px;">
                   <span class="alert-icon">&#9888;</span>
                   <div>
-                    <strong>"이 앱은 확인되지 않았습니다"</strong> 경고가 나타날 수 있어요.
-                    <br>이 경우 "고급" &rarr; "안전하지 않은 페이지로 이동" 을 클릭하세요.
+                    <strong>You may see a "This app isn't verified" warning.</strong>
+                    <br>In this case, click "Advanced" &rarr; "Go to (unsafe)" to proceed.
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">연결 완료!</h3>
+              <h3 class="step-title">Connection Complete!</h3>
               <div class="step-content">
-                <p>권한을 허용하면 자동으로 Discord로 돌아오고, 연결이 완료됩니다.</p>
+                <p>After granting permissions, you'll be automatically redirected back to Discord and the connection will be complete.</p>
 
                 <div class="alert alert-success" style="margin-top: 16px;">
                   <span class="alert-icon">&#9989;</span>
                   <div>
-                    <strong>연결 완료!</strong> 이제 새 Gmail이 도착하면 Discord DM으로 알림을 받게 됩니다.
+                    <strong>Connection complete!</strong> You will now receive Discord DM notifications when new Gmail messages arrive.
                   </div>
                 </div>
               </div>
@@ -240,29 +236,29 @@
       <!-- What D-Mail Can Access -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128270;</span> D-Mail이 접근하는 정보
+          <span>&#128270;</span> D-Mail Permissions
         </h2>
         <div class="card-content">
           <div class="table-wrapper">
             <table>
               <thead>
                 <tr>
-                  <th>권한</th>
-                  <th>용도</th>
+                  <th>Permission</th>
+                  <th>Purpose</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>이메일 메시지 읽기</td>
-                  <td>새 메일 도착 알림을 보내기 위해</td>
+                  <td>Read email messages</td>
+                  <td>To send notifications when new emails arrive</td>
                 </tr>
                 <tr>
-                  <td>이메일 보내기</td>
-                  <td>/메일 작성 기능으로 메일 발송 시 사용</td>
+                  <td>Send email</td>
+                  <td>Used when sending emails via the /mail compose feature</td>
                 </tr>
                 <tr>
-                  <td>이메일 메타데이터 확인</td>
-                  <td>발신자, 제목 등 정보 표시</td>
+                  <td>Email metadata access</td>
+                  <td>To display sender, subject, and other information</td>
                 </tr>
               </tbody>
             </table>
@@ -271,7 +267,7 @@
           <div class="alert alert-info" style="margin-top: 16px;">
             <span class="alert-icon">&#128161;</span>
             <div>
-              D-Mail은 메일 내용을 저장하지 않습니다. 알림 전송 후 메일 데이터는 삭제됩니다.
+              D-Mail does not store your email content. Email data is deleted after sending the notification.
             </div>
           </div>
         </div>
@@ -280,30 +276,30 @@
       <!-- Troubleshooting -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128295;</span> 문제 해결
+          <span>&#128295;</span> Troubleshooting
         </h2>
         <div class="card-content">
-          <h4 style="margin-bottom: 12px;">&#10067; "앱이 확인되지 않았습니다" 경고가 나타나요</h4>
+          <h4 style="margin-bottom: 12px;">&#10067; I see an "App isn't verified" warning</h4>
           <p style="margin-bottom: 20px;">
-            Google의 앱 검증 과정에 있어서 나타나는 정상적인 경고입니다.
-            "고급" 클릭 후 "안전하지 않은 페이지로 이동"을 선택하세요.
+            This is a normal warning that appears during Google's app verification process.
+            Click "Advanced" and then select "Go to (unsafe)" to proceed.
           </p>
 
-          <h4 style="margin-bottom: 12px;">&#10067; 인증 버튼이 작동하지 않아요</h4>
+          <h4 style="margin-bottom: 12px;">&#10067; The verification button isn't working</h4>
           <p style="margin-bottom: 20px;">
-            브라우저에서 팝업이 차단되었을 수 있어요. 팝업 차단을 해제하거나,
-            버튼 URL을 복사해서 직접 브라우저에 붙여넣기 해보세요.
+            Popups may be blocked in your browser. Try disabling the popup blocker,
+            or copy the button URL and paste it directly in your browser.
           </p>
 
-          <h4 style="margin-bottom: 12px;">&#10067; 연결 후 알림이 안 와요</h4>
+          <h4 style="margin-bottom: 12px;">&#10067; I'm not receiving notifications after connecting</h4>
           <p>
-            연결 직후에는 기존 메일에 대한 알림이 오지 않습니다.
-            연결 이후에 도착하는 새 메일부터 알림이 발송됩니다.
+            You won't receive notifications for existing emails right after connecting.
+            Notifications will only be sent for new emails that arrive after the connection.
           </p>
 
           <div style="margin-top: 24px;">
             <a href="troubleshooting.html" class="btn btn-secondary">
-              &#128295; 더 많은 문제 해결 가이드
+              &#128295; More Troubleshooting Guides
             </a>
           </div>
         </div>
@@ -312,20 +308,20 @@
       <!-- Next Steps -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#127919;</span> 다음 단계
+          <span>&#127919;</span> Next Steps
         </h2>
         <div class="card-content">
           <div class="feature-grid">
             <a href="notifications.html" class="feature-card">
               <div class="feature-icon">&#128276;</div>
-              <h3 class="feature-title">알림 기능</h3>
-              <p class="feature-description">메일 알림이 어떻게 오는지 알아보기</p>
+              <h3 class="feature-title">Notifications</h3>
+              <p class="feature-description">Learn how email notifications work</p>
             </a>
 
             <a href="send-mail.html" class="feature-card">
               <div class="feature-icon">&#9992;</div>
-              <h3 class="feature-title">메일 보내기</h3>
-              <p class="feature-description">Discord에서 메일 작성하고 보내기</p>
+              <h3 class="feature-title">Send Email</h3>
+              <p class="feature-description">Compose and send emails from Discord</p>
             </a>
           </div>
         </div>

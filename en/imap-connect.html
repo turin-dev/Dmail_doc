@@ -1,40 +1,40 @@
-﻿<!DOCTYPE html>
-<html lang="ko">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>네이버/다음 메일 연결 - D-Mail | IMAP 앱 비밀번호 설정 가이드</title>
-  <meta name="description" content="D-Mail에 네이버 메일, 다음/카카오 메일, iCloud를 IMAP으로 연결하는 방법. 앱 비밀번호 발급부터 연결까지 단계별로 안내합니다.">
-  <meta name="keywords" content="D-Mail 네이버 메일, 다음 메일 연결, 카카오 메일, IMAP 설정, 앱 비밀번호, Discord 메일 알림, Naver mail Discord">
+  <title>Connect Naver/Daum Email - D-Mail | IMAP App Password Setup Guide</title>
+  <meta name="description" content="Learn how to connect Naver Mail, Daum/Kakao Mail, and iCloud to D-Mail using IMAP. Step-by-step guide from generating app passwords to completing the connection.">
+  <meta name="keywords" content="D-Mail Naver Mail, Daum Mail connect, Kakao Mail, IMAP setup, app password, Discord email notification, iCloud mail Discord">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://doc.dmailbot.com/imap-connect.html">
+  <link rel="canonical" href="https://doc.dmailbot.com/en/imap-connect.html">
   <link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/imap-connect.html">
   <link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/imap-connect.html">
   <link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/imap-connect.html">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="네이버/다음 메일 연결 - D-Mail">
-  <meta property="og:description" content="네이버, 다음/카카오, iCloud 메일을 D-Mail에 IMAP으로 연결하는 방법을 안내합니다.">
-  <meta property="og:url" content="https://doc.dmailbot.com/imap-connect.html">
+  <meta property="og:title" content="Connect Naver/Daum Email - D-Mail">
+  <meta property="og:description" content="Learn how to connect Naver, Daum/Kakao, and iCloud mail to D-Mail using IMAP and app passwords.">
+  <meta property="og:url" content="https://doc.dmailbot.com/en/imap-connect.html">
   <meta property="og:site_name" content="D-Mail">
-  <meta property="og:locale" content="ko_KR">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="네이버/다음 메일 연결 - D-Mail">
-  <meta name="twitter:description" content="네이버, 다음/카카오 메일을 D-Mail에 앱 비밀번호로 연결하는 방법 안내.">
+  <meta name="twitter:title" content="Connect Naver/Daum Email - D-Mail">
+  <meta name="twitter:description" content="Connect Naver, Daum/Kakao mail to D-Mail using app passwords. Step-by-step guide.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    "name": "D-Mail에 네이버/다음 메일 연결하기",
-    "description": "IMAP과 앱 비밀번호를 사용하여 네이버, 다음/카카오 메일을 D-Mail에 연결하는 방법",
+    "name": "Connect Naver/Daum Email to D-Mail",
+    "description": "How to connect Naver, Daum/Kakao, and other IMAP-supported email services to D-Mail using app passwords",
     "step": [
-      {"@type": "HowToStep", "name": "메일 서비스에서 IMAP 활성화", "text": "네이버 또는 다음 메일 설정에서 IMAP 사용을 활성화합니다."},
-      {"@type": "HowToStep", "name": "앱 비밀번호 발급", "text": "각 메일 서비스의 보안 설정에서 앱 비밀번호를 생성합니다."},
-      {"@type": "HowToStep", "name": "D-Mail에서 /메일 추가 실행", "text": "Discord에서 /메일 추가 명령어를 입력하고 이메일 주소를 입력합니다."},
-      {"@type": "HowToStep", "name": "앱 비밀번호 입력", "text": "발급받은 앱 비밀번호를 입력하면 연결이 완료됩니다."}
+      {"@type": "HowToStep", "name": "Enable IMAP in your email service", "text": "Enable IMAP usage in your Naver or Daum mail settings."},
+      {"@type": "HowToStep", "name": "Generate an app password", "text": "Create an app password in the security settings of your email service."},
+      {"@type": "HowToStep", "name": "Run /mail add in D-Mail", "text": "Type the /mail add command in Discord and enter your email address."},
+      {"@type": "HowToStep", "name": "Enter the app password", "text": "Enter the generated app password to complete the connection."}
     ]
   }
   </script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
 </head>
@@ -52,61 +52,57 @@
           <div class="logo-icon">&#9993;</div>
           <span>D-Mail</span>
         </div>
-        <a href="en/imap-connect.html" class="lang-switch" title="Switch to English">
+        <a href="../imap-connect.html" class="lang-switch" title="한국어로 전환">
           <span class="lang-switch-icon">&#127760;</span>
-          EN
+          KO
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">시작하기</div>
+        <div class="nav-section-title">Getting Started</div>
         <a href="index.html" class="nav-link">
           <span class="nav-icon">&#127968;</span>
-          <span>홈</span>
+          <span>Home</span>
         </a>
         <a href="getting-started.html" class="nav-link">
           <span class="nav-icon">&#128640;</span>
-          <span>시작하기</span>
+          <span>Getting Started</span>
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">메일 연결</div>
+        <div class="nav-section-title">Connect Email</div>
         <a href="gmail-connect.html" class="nav-link">
           <span class="nav-icon">&#128231;</span>
-          <span>Gmail 연결</span>
+          <span>Gmail Connect</span>
         </a>
         <a href="imap-connect.html" class="nav-link active">
           <span class="nav-icon">&#128233;</span>
-          <span>다른 메일 연결</span>
+          <span>Other Email</span>
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">기능 사용법</div>
+        <div class="nav-section-title">Features</div>
         <a href="notifications.html" class="nav-link">
           <span class="nav-icon">&#128276;</span>
-          <span>알림 받기</span>
+          <span>Notifications</span>
         </a>
         <a href="send-mail.html" class="nav-link">
           <span class="nav-icon">&#9992;</span>
-          <span>메일 보내기</span>
+          <span>Send Email</span>
         </a>
         <a href="manage-mail.html" class="nav-link">
           <span class="nav-icon">&#9881;</span>
-          <span>메일 관리</span>
+          <span>Manage Email</span>
         </a>
       </div>
 
       <div class="nav-section">
-        <div class="nav-section-title">도움말</div>
+        <div class="nav-section-title">Help</div>
         <a href="troubleshooting.html" class="nav-link">
           <span class="nav-icon">&#128295;</span>
-          <span>문제 해결</span>
-        </a>
-        <a href="faq.html" class="nav-link">
-          <span class="nav-icon">&#10067;</span>
-          <span>자주 묻는 질문</span>
+          <span>Troubleshooting</span>
         </a>
       </div>
 
@@ -116,68 +112,68 @@
     <main class="main-content">
       <!-- Breadcrumb -->
       <div class="breadcrumb">
-        <a href="index.html">홈</a>
+        <a href="index.html">Home</a>
         <span class="breadcrumb-separator">&#8250;</span>
-        <a href="getting-started.html">시작하기</a>
+        <a href="getting-started.html">Getting Started</a>
         <span class="breadcrumb-separator">&#8250;</span>
-        <span>다른 메일 연결</span>
+        <span>Other Email</span>
       </div>
 
       <header class="page-header">
         <div class="page-header-content">
-          <h1 class="page-title">&#128233; 다른 메일 연결하기</h1>
+          <h1 class="page-title">&#128233; Connect Other Email</h1>
           <p class="page-description">
-            네이버, 다음 등 IMAP을 지원하는 메일을 앱 비밀번호로 연결하세요.
+            Connect Naver, Daum, and other IMAP-supported email services using app passwords.
           </p>
         </div>
         <!-- Theme Toggle -->
         <div class="theme-toggle-wrapper">
-          <span class="theme-toggle-label">☀️</span>
-          <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환" aria-label="다크모드 전환"></button>
-          <span class="theme-toggle-label">🌙</span>
+          <span class="theme-toggle-label">&#9728;&#65039;</span>
+          <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle dark mode"></button>
+          <span class="theme-toggle-label">&#127769;</span>
         </div>
       </header>
 
       <!-- Supported Services -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#10003;</span> 지원하는 메일 서비스
+          <span>&#10003;</span> Supported Email Services
         </h2>
         <div class="card-content">
           <div class="table-wrapper">
             <table>
               <thead>
                 <tr>
-                  <th>메일 서비스</th>
-                  <th>지원 여부</th>
-                  <th>비고</th>
+                  <th>Email Service</th>
+                  <th>Support Status</th>
+                  <th>Notes</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>Gmail</td>
-                  <td style="color: var(--success-color);">&#10003; OAuth 지원</td>
-                  <td><a href="gmail-connect.html">Gmail 연결 가이드</a> 참조</td>
+                  <td style="color: var(--success-color);">&#10003; OAuth Supported</td>
+                  <td>See <a href="gmail-connect.html">Gmail Connection Guide</a></td>
                 </tr>
                 <tr>
-                  <td>네이버 메일</td>
-                  <td style="color: var(--success-color);">&#10003; 지원</td>
-                  <td>앱 비밀번호 필요</td>
+                  <td>Naver Mail</td>
+                  <td style="color: var(--success-color);">&#10003; Supported</td>
+                  <td>App password required</td>
                 </tr>
                 <tr>
-                  <td>다음/카카오 메일</td>
-                  <td style="color: var(--success-color);">&#10003; 지원</td>
-                  <td>앱 비밀번호 필요</td>
+                  <td>Daum/Kakao Mail</td>
+                  <td style="color: var(--success-color);">&#10003; Supported</td>
+                  <td>App password required</td>
                 </tr>
                 <tr>
-                  <td>iCloud 메일</td>
-                  <td style="color: var(--success-color);">&#10003; 지원</td>
-                  <td>앱 비밀번호 필요</td>
+                  <td>iCloud Mail</td>
+                  <td style="color: var(--success-color);">&#10003; Supported</td>
+                  <td>App password required</td>
                 </tr>
                 <tr>
                   <td>Outlook / Hotmail</td>
-                  <td style="color: var(--error-color);">&#10005; 미지원</td>
-                  <td>비용 문제로 현재 미지원</td>
+                  <td style="color: var(--error-color);">&#10005; Not Supported</td>
+                  <td>Currently unsupported due to API costs</td>
                 </tr>
               </tbody>
             </table>
@@ -186,8 +182,8 @@
           <div class="alert alert-warning" style="margin-top: 16px;">
             <span class="alert-icon">&#9888;</span>
             <div>
-              <strong>Outlook 사용자 안내:</strong> 현재 Outlook/Hotmail은 Microsoft API 비용 문제로 지원하지 않습니다.
-              Gmail 계정 사용을 권장드립니다.
+              <strong>Notice for Outlook users:</strong> Outlook/Hotmail is currently not supported due to Microsoft API cost limitations.
+              We recommend using a Gmail account instead.
             </div>
           </div>
         </div>
@@ -196,21 +192,21 @@
       <!-- What is App Password -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128273;</span> 앱 비밀번호란?
+          <span>&#128273;</span> What is an App Password?
         </h2>
         <div class="card-content">
           <p>
-            앱 비밀번호는 <strong>일반 비밀번호 대신 특정 앱에서만 사용</strong>할 수 있는 별도의 비밀번호입니다.
+            An app password is a <strong>separate password that can only be used by a specific app</strong>, instead of your regular password.
           </p>
 
           <div class="alert alert-info" style="margin-top: 16px;">
             <span class="alert-icon">&#128161;</span>
             <div>
-              <strong>앱 비밀번호의 장점:</strong>
+              <strong>Benefits of app passwords:</strong>
               <ul style="margin-top: 8px; padding-left: 20px;">
-                <li>실제 비밀번호를 공유하지 않아도 됨</li>
-                <li>필요시 언제든 해당 앱 비밀번호만 삭제 가능</li>
-                <li>메일 서비스의 보안 기능 유지</li>
+                <li>No need to share your actual password</li>
+                <li>You can delete the specific app password anytime if needed</li>
+                <li>Your email service's security features remain intact</li>
               </ul>
             </div>
           </div>
@@ -220,49 +216,49 @@
       <!-- Naver Mail Guide -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128215;</span> 네이버 메일 앱 비밀번호 발급
+          <span>&#128215;</span> Naver Mail App Password Guide
         </h2>
         <div class="card-content">
           <div class="steps">
             <div class="step">
-              <h3 class="step-title">네이버 메일 설정 페이지 접속</h3>
+              <h3 class="step-title">Go to Naver Mail Settings</h3>
               <div class="step-content">
-                <p>네이버 메일에 로그인 후, <strong>환경설정</strong>으로 이동하세요.</p>
-                <p style="margin-top: 8px;">또는 아래 링크를 클릭하세요:</p>
+                <p>Log in to Naver Mail and navigate to <strong>Settings</strong>.</p>
+                <p style="margin-top: 8px;">Or click the link below:</p>
                 <a href="https://mail.naver.com/v2/settings/smtp/imap" target="_blank" class="btn btn-secondary" style="margin-top: 12px;">
-                  &#128279; 네이버 메일 설정
+                  &#128279; Naver Mail Settings
                 </a>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">POP3/IMAP 설정</h3>
+              <h3 class="step-title">POP3/IMAP Settings</h3>
               <div class="step-content">
-                <p><strong>POP3/IMAP 설정</strong> 메뉴를 클릭하세요.</p>
-                <p style="margin-top: 8px;"><strong>IMAP/SMTP 사용</strong>을 <code>사용함</code>으로 변경합니다.</p>
+                <p>Click the <strong>POP3/IMAP Settings</strong> menu.</p>
+                <p style="margin-top: 8px;">Change <strong>IMAP/SMTP usage</strong> to <code>Enabled</code>.</p>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">앱 비밀번호 생성</h3>
+              <h3 class="step-title">Generate App Password</h3>
               <div class="step-content">
-                <p>같은 페이지에서 <strong>"앱 비밀번호 생성"</strong> 버튼을 클릭합니다.</p>
-                <p style="margin-top: 8px;">앱 이름에 <code>D-Mail</code>을 입력하고 생성하세요.</p>
+                <p>On the same page, click the <strong>"Generate App Password"</strong> button.</p>
+                <p style="margin-top: 8px;">Enter <code>D-Mail</code> as the app name and generate it.</p>
 
                 <div class="alert alert-warning" style="margin-top: 16px;">
                   <span class="alert-icon">&#9888;</span>
                   <div>
-                    생성된 앱 비밀번호는 한 번만 표시됩니다! 바로 복사해서 저장해두세요.
+                    The generated app password is only shown once! Copy and save it right away.
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">D-Mail에 입력</h3>
+              <h3 class="step-title">Enter in D-Mail</h3>
               <div class="step-content">
-                <p>Discord로 돌아가서 "앱 비밀번호 입력하기" 버튼을 클릭합니다.</p>
-                <p style="margin-top: 8px;">복사한 앱 비밀번호를 입력하면 연결 완료!</p>
+                <p>Go back to Discord and click the "Enter App Password" button.</p>
+                <p style="margin-top: 8px;">Enter the copied app password to complete the connection!</p>
               </div>
             </div>
           </div>
@@ -272,33 +268,33 @@
       <!-- Daum/Kakao Mail Guide -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128155;</span> 다음/카카오 메일 앱 비밀번호 발급
+          <span>&#128155;</span> Daum/Kakao Mail App Password Guide
         </h2>
         <div class="card-content">
           <div class="steps">
             <div class="step">
-              <h3 class="step-title">다음 메일 설정 접속</h3>
+              <h3 class="step-title">Go to Daum Mail Settings</h3>
               <div class="step-content">
-                <p>다음 메일에 로그인 후, <strong>환경설정</strong> &rarr; <strong>IMAP/POP3</strong>로 이동합니다.</p>
+                <p>Log in to Daum Mail and navigate to <strong>Settings</strong> &rarr; <strong>IMAP/POP3</strong>.</p>
                 <a href="https://mail.daum.net" target="_blank" class="btn btn-secondary" style="margin-top: 12px;">
-                  &#128279; 다음 메일
+                  &#128279; Daum Mail
                 </a>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">IMAP 사용 설정</h3>
+              <h3 class="step-title">Enable IMAP</h3>
               <div class="step-content">
-                <p><strong>IMAP 사용</strong>을 활성화합니다.</p>
+                <p>Enable <strong>IMAP usage</strong>.</p>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">앱 비밀번호 발급</h3>
+              <h3 class="step-title">Generate App Password</h3>
               <div class="step-content">
-                <p><strong>카카오 계정 &rarr; 보안 &rarr; 앱 비밀번호</strong>에서 발급받습니다.</p>
+                <p>Go to <strong>Kakao Account &rarr; Security &rarr; App Password</strong> to generate one.</p>
                 <a href="https://accounts.kakao.com/weblogin/account/security" target="_blank" class="btn btn-secondary" style="margin-top: 12px;">
-                  &#128279; 카카오 계정 보안
+                  &#128279; Kakao Account Security
                 </a>
               </div>
             </div>
@@ -309,23 +305,23 @@
       <!-- Connection Steps -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#128187;</span> D-Mail에서 연결하기
+          <span>&#128187;</span> Connect in D-Mail
         </h2>
         <div class="card-content">
           <div class="steps">
             <div class="step">
-              <h3 class="step-title">메일 추가 명령어 실행</h3>
+              <h3 class="step-title">Run the Mail Add Command</h3>
               <div class="step-content">
                 <div class="code-block">
-                  /메일 추가
+                  /mail add
                 </div>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">이메일 주소 입력</h3>
+              <h3 class="step-title">Enter Your Email Address</h3>
               <div class="step-content">
-                <p>연결할 이메일 주소를 입력합니다.</p>
+                <p>Enter the email address you want to connect.</p>
                 <div class="code-block">
                   example@naver.com
                 </div>
@@ -333,26 +329,26 @@
             </div>
 
             <div class="step">
-              <h3 class="step-title">앱 비밀번호 입력</h3>
+              <h3 class="step-title">Enter the App Password</h3>
               <div class="step-content">
-                <p>"앱 비밀번호 입력하기" 버튼을 클릭하고, 발급받은 앱 비밀번호를 입력합니다.</p>
+                <p>Click the "Enter App Password" button and enter the app password you generated.</p>
 
                 <div class="alert alert-info" style="margin-top: 16px;">
                   <span class="alert-icon">&#128161;</span>
                   <div>
-                    앱 비밀번호는 암호화되어 안전하게 저장됩니다.
+                    Your app password is encrypted and stored securely.
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="step">
-              <h3 class="step-title">연결 완료!</h3>
+              <h3 class="step-title">Connection Complete!</h3>
               <div class="step-content">
                 <div class="alert alert-success">
                   <span class="alert-icon">&#9989;</span>
                   <div>
-                    <strong>연결 완료!</strong> 이제 새 메일이 도착하면 Discord DM으로 알림을 받게 됩니다.
+                    <strong>Connection complete!</strong> You will now receive Discord DM notifications when new emails arrive.
                   </div>
                 </div>
               </div>
@@ -364,14 +360,14 @@
       <!-- Note about Sending -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#9888;</span> 참고 사항
+          <span>&#9888;</span> Important Notes
         </h2>
         <div class="card-content">
           <div class="alert alert-warning">
             <span class="alert-icon">&#9888;</span>
             <div>
-              <strong>메일 발송 제한:</strong> 현재 메일 발송 기능(<code>/메일 작성</code>)은 Gmail 계정에서만 지원됩니다.
-              네이버, 다음 등 IMAP 계정은 메일 수신 알림만 가능합니다.
+              <strong>Email sending limitation:</strong> The email sending feature (<code>/mail compose</code>) is currently only supported for Gmail accounts.
+              Naver, Daum, and other IMAP accounts can only receive email notifications.
             </div>
           </div>
         </div>
@@ -380,20 +376,20 @@
       <!-- Next Steps -->
       <div class="card">
         <h2 class="card-title">
-          <span>&#127919;</span> 다음 단계
+          <span>&#127919;</span> Next Steps
         </h2>
         <div class="card-content">
           <div class="feature-grid">
             <a href="notifications.html" class="feature-card">
               <div class="feature-icon">&#128276;</div>
-              <h3 class="feature-title">알림 기능</h3>
-              <p class="feature-description">메일 알림이 어떻게 오는지 알아보기</p>
+              <h3 class="feature-title">Notifications</h3>
+              <p class="feature-description">Learn how email notifications work</p>
             </a>
 
             <a href="manage-mail.html" class="feature-card">
               <div class="feature-icon">&#9881;</div>
-              <h3 class="feature-title">메일 관리</h3>
-              <p class="feature-description">연결된 메일 관리하기</p>
+              <h3 class="feature-title">Manage Email</h3>
+              <p class="feature-description">Manage your connected email accounts</p>
             </a>
           </div>
         </div>

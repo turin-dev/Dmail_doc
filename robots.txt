@@ -1,8 +1,8 @@
-# robots.txt for doc.emailbot.site
-# 모든 검색 엔진 크롤러가 사이트의 모든 페이지에 접근할 수 있도록 허용합니다
+# robots.txt for doc.dmailbot.com
+# Allow all search engine crawlers to access all pages
 
 User-agent: *
 Allow: /
 
-# Sitemap 위치를 명시하여 검색 엔진이 사이트 구조를 효율적으로 파악할 수 있도록 합니다
-Sitemap: https://doc.emailbot.site/sitemap.xml
+# Sitemap location
+Sitemap: https://doc.dmailbot.com/sitemap.xml

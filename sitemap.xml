@@ -1,65 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-    Sitemap for doc.emailbot.site
-    이 사이트맵은 검색 엔진이 사이트의 모든 페이지를 효율적으로 발견하고 크롤링할 수 있도록 돕습니다.
-    각 URL에는 우선순위(priority)와 변경 빈도(changefreq)가 설정되어 있습니다.
--->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    
-    <!-- 메인 페이지 - 가장 높은 우선순위 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Main page (Korean) -->
     <url>
-        <loc>https://doc.emailbot.site/</loc>
+        <loc>https://doc.dmailbot.com/</loc>
+        <lastmod>2026-02-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/"/>
     </url>
-    
-    <!-- 시작 가이드 - 높은 우선순위 -->
+
+    <!-- Main page (English) -->
     <url>
-        <loc>https://doc.emailbot.site/getting-started.html</loc>
+        <loc>https://doc.dmailbot.com/en/</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/"/>
+    </url>
+
+    <!-- Getting Started (Korean) -->
+    <url>
+        <loc>https://doc.dmailbot.com/getting-started.html</loc>
+        <lastmod>2026-02-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/getting-started.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/getting-started.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/getting-started.html"/>
     </url>
-    
-    <!-- Gmail 연결 가이드 -->
+
+    <!-- Getting Started (English) -->
     <url>
-        <loc>https://doc.emailbot.site/gmail-connect.html</loc>
+        <loc>https://doc.dmailbot.com/en/getting-started.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/getting-started.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/getting-started.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/getting-started.html"/>
+    </url>
+
+    <!-- Gmail Connection Guide (Korean) -->
+    <url>
+        <loc>https://doc.dmailbot.com/gmail-connect.html</loc>
+        <lastmod>2026-02-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/gmail-connect.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/gmail-connect.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/gmail-connect.html"/>
     </url>
-    
-    <!-- IMAP 연결 가이드 -->
+
+    <!-- Gmail Connection Guide (English) -->
     <url>
-        <loc>https://doc.emailbot.site/imap-connect.html</loc>
+        <loc>https://doc.dmailbot.com/en/gmail-connect.html</loc>
+        <lastmod>2026-02-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/gmail-connect.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/gmail-connect.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/gmail-connect.html"/>
     </url>
-    
-    <!-- 메일 관리 가이드 -->
+
+    <!-- IMAP Connection Guide (Korean) -->
     <url>
-        <loc>https://doc.emailbot.site/manage-mail.html</loc>
+        <loc>https://doc.dmailbot.com/imap-connect.html</loc>
+        <lastmod>2026-02-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/imap-connect.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/imap-connect.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/imap-connect.html"/>
     </url>
-    
-    <!-- 메일 발송 가이드 -->
+
+    <!-- IMAP Connection Guide (English) -->
     <url>
-        <loc>https://doc.emailbot.site/send-mail.html</loc>
+        <loc>https://doc.dmailbot.com/en/imap-connect.html</loc>
+        <lastmod>2026-02-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/imap-connect.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/imap-connect.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/imap-connect.html"/>
     </url>
-    
-    <!-- 알림 설정 가이드 -->
+
+    <!-- Notifications Guide (Korean) -->
     <url>
-        <loc>https://doc.emailbot.site/notifications.html</loc>
+        <loc>https://doc.dmailbot.com/notifications.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/notifications.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/notifications.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/notifications.html"/>
+    </url>
+
+    <!-- Notifications Guide (English) -->
+    <url>
+        <loc>https://doc.dmailbot.com/en/notifications.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/notifications.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/notifications.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/notifications.html"/>
+    </url>
+
+    <!-- Send Mail Guide (Korean) -->
+    <url>
+        <loc>https://doc.dmailbot.com/send-mail.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/send-mail.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/send-mail.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/send-mail.html"/>
+    </url>
+
+    <!-- Send Mail Guide (English) -->
+    <url>
+        <loc>https://doc.dmailbot.com/en/send-mail.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/send-mail.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/send-mail.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/send-mail.html"/>
+    </url>
+
+    <!-- Mail Management Guide (Korean) -->
+    <url>
+        <loc>https://doc.dmailbot.com/manage-mail.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/manage-mail.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/manage-mail.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/manage-mail.html"/>
+    </url>
+
+    <!-- Mail Management Guide (English) -->
+    <url>
+        <loc>https://doc.dmailbot.com/en/manage-mail.html</loc>
+        <lastmod>2026-02-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/manage-mail.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/manage-mail.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/manage-mail.html"/>
+    </url>
+
+    <!-- Troubleshooting Guide (Korean) -->
+    <url>
+        <loc>https://doc.dmailbot.com/troubleshooting.html</loc>
+        <lastmod>2026-02-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/troubleshooting.html"/>
     </url>
-    
-    <!-- 문제 해결 가이드 -->
+
+    <!-- Troubleshooting Guide (English) -->
     <url>
-        <loc>https://doc.emailbot.site/troubleshooting.html</loc>
+        <loc>https://doc.dmailbot.com/en/troubleshooting.html</loc>
+        <lastmod>2026-02-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/troubleshooting.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/troubleshooting.html"/>
     </url>
-    
+
 </urlset>

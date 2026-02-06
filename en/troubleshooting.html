@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troubleshooting - D-Mail | Connection Errors, Notification Issues, FAQ</title>
+  <meta name="description" content="D-Mail troubleshooting guide. Resolve OAuth authentication errors, missing notifications, email send failures, app password issues, and more.">
+  <meta name="keywords" content="D-Mail troubleshooting, OAuth error, no notifications, email send failed, app password, Discord bot troubleshooting">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://doc.dmailbot.com/en/troubleshooting.html">
+  <link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/troubleshooting.html">
+  <link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/troubleshooting.html">
+  <link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/troubleshooting.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Troubleshooting - D-Mail">
+  <meta property="og:description" content="Resolve common D-Mail issues including connection errors, notification problems, and email send failures.">
+  <meta property="og:url" content="https://doc.dmailbot.com/en/troubleshooting.html">
+  <meta property="og:site_name" content="D-Mail">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Troubleshooting - D-Mail">
+  <meta name="twitter:description" content="Having issues with D-Mail? Find solutions for connection errors, notification problems, and more.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "The OAuth authentication button is not working",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your browser may be blocking popups. Disable the popup blocker, or right-click the button to copy the URL and paste it directly into your browser. You can also try a different browser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "I'm not receiving any notifications",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Check that the bot's DMs are not blocked in your Discord settings. Verify your email account is connected by checking /mail manage. Note that only new emails received after connecting will trigger notifications."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Email sending failed",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verify the recipient email address is correct, ensure attachments do not exceed 20MB, and check if your OAuth authentication has expired. Try reconnecting your account if needed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "App password connection failed",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Make sure IMAP is enabled in your email settings. Ensure you are using the app password, not your account password. Two-factor authentication must be enabled to generate an app password."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "The bot is not responding",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Check if the bot is online in your server. Make sure you are using the correct slash commands (/mail). You can check the bot status with !ping."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" onclick="toggleSidebar()">
+    <span id="menu-icon">&#9776;</span>
+  </button>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon">&#9993;</div>
+          <span>D-Mail</span>
+        </div>
+        <a href="../troubleshooting.html" class="lang-switch" title="한국어로 전환">
+          <span class="lang-switch-icon">&#127760;</span>
+          KO
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Getting Started</div>
+        <a href="index.html" class="nav-link">
+          <span class="nav-icon">&#127968;</span>
+          <span>Home</span>
+        </a>
+        <a href="getting-started.html" class="nav-link">
+          <span class="nav-icon">&#128640;</span>
+          <span>Getting Started</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Connect Email</div>
+        <a href="gmail-connect.html" class="nav-link">
+          <span class="nav-icon">&#128231;</span>
+          <span>Gmail Connect</span>
+        </a>
+        <a href="imap-connect.html" class="nav-link">
+          <span class="nav-icon">&#128233;</span>
+          <span>Other Email</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Features</div>
+        <a href="notifications.html" class="nav-link">
+          <span class="nav-icon">&#128276;</span>
+          <span>Notifications</span>
+        </a>
+        <a href="send-mail.html" class="nav-link">
+          <span class="nav-icon">&#9992;</span>
+          <span>Send Email</span>
+        </a>
+        <a href="manage-mail.html" class="nav-link">
+          <span class="nav-icon">&#9881;</span>
+          <span>Manage Email</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Help</div>
+        <a href="troubleshooting.html" class="nav-link active">
+          <span class="nav-icon">&#128295;</span>
+          <span>Troubleshooting</span>
+        </a>
+      </div>
+
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">&#8250;</span>
+        <span>Troubleshooting</span>
+      </div>
+
+      <header class="page-header">
+        <div class="page-header-content">
+          <h1 class="page-title">&#128295; Troubleshooting</h1>
+          <p class="page-description">
+            Having issues with D-Mail? Find solutions to common problems here.
+          </p>
+        </div>
+        <!-- Theme Toggle -->
+        <div class="theme-toggle-wrapper">
+          <span class="theme-toggle-label">&#9728;&#65039;</span>
+          <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle dark mode"></button>
+          <span class="theme-toggle-label">&#127769;</span>
+        </div>
+      </header>
+
+      <!-- Connection Issues -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128279;</span> Connection Issues
+        </h2>
+        <div class="card-content">
+          <h4 style="margin-bottom: 12px; color: var(--error-color);">&#10067; The OAuth authentication button is not working</h4>
+          <div style="margin-bottom: 24px; padding-left: 20px;">
+            <p><strong>Cause:</strong> Your browser may be blocking popups.</p>
+            <p style="margin-top: 8px;"><strong>Solutions:</strong></p>
+            <ul style="padding-left: 20px; margin-top: 8px;">
+              <li>Disable the popup blocker in your browser</li>
+              <li>Right-click the button to copy the URL and paste it directly in your browser</li>
+              <li>Try a different browser</li>
+            </ul>
+          </div>
+
+          <h4 style="margin-bottom: 12px; color: var(--error-color);">&#10067; "This app isn't verified" warning</h4>
+          <div style="margin-bottom: 24px; padding-left: 20px;">
+            <p><strong>Cause:</strong> This warning appears because the app is going through Google's verification process.</p>
+            <p style="margin-top: 8px;"><strong>Solutions:</strong></p>
+            <ol style="padding-left: 20px; margin-top: 8px;">
+              <li>Click "Advanced"</li>
+              <li>Click "Go to [app name] (unsafe)"</li>
+              <li>Continue with the authentication</li>
+            </ol>
+          </div>
+
+          <h4 style="margin-bottom: 12px; color: var(--error-color);">&#10067; App password connection failed</h4>
+          <div style="padding-left: 20px;">
+            <p><strong>Check the following:</strong></p>
+            <ul style="padding-left: 20px; margin-top: 8px;">
+              <li>Make sure IMAP is enabled in your email settings</li>
+              <li>Verify the app password was entered correctly (watch for spaces)</li>
+              <li>Ensure you are using the app password, not your account password</li>
+              <li>Two-factor authentication must be enabled to generate an app password</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notification Issues -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128276;</span> Notification Issues
+        </h2>
+        <div class="card-content">
+          <h4 style="margin-bottom: 12px; color: var(--error-color);">&#10067; I'm not receiving any notifications</h4>
+          <div style="margin-bottom: 24px; padding-left: 20px;">
+            <p><strong>Check the following:</strong></p>
+            <ul style="padding-left: 20px; margin-top: 8px;">
+              <li>Make sure the bot's DMs are not blocked in your Discord settings</li>
+              <li>Verify your email account status is connected in <code>/mail manage</code></li>
+              <li>Only new emails received after connecting will trigger notifications (not existing emails)</li>
+            </ul>
+          </div>
+
+          <h4 style="margin-bottom: 12px; color: var(--error-color);">&#10067; Notifications are delayed</h4>
+          <div style="margin-bottom: 24px; padding-left: 20px;">
+            <p><strong>Cause:</strong> D-Mail checks for new emails every 30 seconds.</p>
+            <p style="margin-top: 8px;"><strong>Normal range:</strong></p>
+            <ul style="padding-left: 20px; margin-top: 8px;">
+              <li>Typical: 30 seconds to 1 minute delay</li>
+              <li>Depending on server load, up to 2-3 minutes delay is possible</li>
+            </ul>
+          </div>
+
+          <h4 style="margin-bottom: 12px; color: var(--error-color);">&#10067; I'm only receiving notifications for some emails</h4>
+          <div style="padding-left: 20px;">
+            <p><strong>Possible causes:</strong></p>
+            <ul style="padding-left: 20px; margin-top: 8px;">
+              <li>The email may have been classified as spam</li>
+              <li>Mail server synchronization delay</li>
+              <li>If many emails arrive simultaneously, some may be missed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- OAuth Issues -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128274;</span> OAuth / Authentication Issues
+        </h2>
+        <div class="card-content">
+          <h4 style="margin-bottom: 12px; color: var(--error-color);">&#10067; "Unable to verify Gmail credentials" error</h4>
+          <div style="margin-bottom: 24px; padding-left: 20px;">
+            <p><strong>Cause:</strong> The OAuth token has expired or the permissions have been revoked.</p>
+            <p style="margin-top: 8px;"><strong>Solution:</strong></p>
+            <ol style="padding-left: 20px; margin-top: 8px;">
+              <li>Delete the account in <code>/mail manage</code></li>
+              <li>Reconnect the same account using <code>/mail add</code></li>
+              <li>Complete the OAuth authentication again</li>
+            </ol>
+          </div>
+
+          <h4 style="margin-bottom: 12px; color: var(--error-color);">&#10067; The bot is requesting re-authentication</h4>
+          <div style="padding-left: 20px;">
+            <p><strong>Possible causes:</strong></p>
+            <ul style="padding-left: 20px; margin-top: 8px;">
+              <li>Google account password was changed</li>
+              <li>App permissions were revoked in your Google account settings</li>
+              <li>Token expired due to prolonged inactivity</li>
+            </ul>
+            <p style="margin-top: 12px;"><strong>Solution:</strong> Click the authentication button sent by the bot to re-authenticate.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Send Mail Issues -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#9992;</span> Send Email Issues
+        </h2>
+        <div class="card-content">
+          <h4 style="margin-bottom: 12px; color: var(--error-color);">&#10067; "No connected email account" error</h4>
+          <div style="margin-bottom: 24px; padding-left: 20px;">
+            <p><strong>Cause:</strong> No Gmail account is connected.</p>
+            <p style="margin-top: 8px;"><strong>Solution:</strong> Use <code>/mail add</code> to connect a Gmail account.</p>
+            <div class="alert alert-warning" style="margin-top: 12px;">
+              <span class="alert-icon">&#9888;</span>
+              <div>Email sending is only supported with Gmail accounts.</div>
+            </div>
+          </div>
+
+          <h4 style="margin-bottom: 12px; color: var(--error-color);">&#10067; Email sending failed</h4>
+          <div style="margin-bottom: 24px; padding-left: 20px;">
+            <p><strong>Check the following:</strong></p>
+            <ul style="padding-left: 20px; margin-top: 8px;">
+              <li>Verify the recipient email address is correct</li>
+              <li>Ensure attachments do not exceed 20MB total</li>
+              <li>Check if your OAuth authentication is still valid (you may need to reconnect)</li>
+            </ul>
+          </div>
+
+          <h4 style="margin-bottom: 12px; color: var(--error-color);">&#10067; Attachments are not being added</h4>
+          <div style="padding-left: 20px;">
+            <p><strong>Limitations:</strong></p>
+            <ul style="padding-left: 20px; margin-top: 8px;">
+              <li>Maximum of 8 files per email</li>
+              <li>Total attachment size must be under 20MB</li>
+              <li>Files can only be added in the DM channel where the compose panel is active</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bot Response Issues -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#129302;</span> Bot Response Issues
+        </h2>
+        <div class="card-content">
+          <h4 style="margin-bottom: 12px; color: var(--error-color);">&#10067; The bot is not responding</h4>
+          <div style="margin-bottom: 24px; padding-left: 20px;">
+            <p><strong>Check the following:</strong></p>
+            <ul style="padding-left: 20px; margin-top: 8px;">
+              <li>Verify the bot is online in your server</li>
+              <li>Make sure you are using the correct slash commands (<code>/mail</code>)</li>
+              <li>Use <code>!ping</code> to check the bot's status</li>
+            </ul>
+          </div>
+
+          <h4 style="margin-bottom: 12px; color: var(--error-color);">&#10067; Buttons are not responding when clicked</h4>
+          <div style="padding-left: 20px;">
+            <p><strong>Possible causes:</strong></p>
+            <ul style="padding-left: 20px; margin-top: 8px;">
+              <li>Old buttons from previous sessions may no longer work</li>
+              <li>Network connection issues</li>
+              <li>Try restarting the Discord app</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Support -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128172;</span> Need More Help?
+        </h2>
+        <div class="card-content">
+          <p>If the solutions above did not resolve your issue, please contact our support team!</p>
+
+          <div style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://discord.gg/Mf92KJtPCc" class="btn btn-primary" target="_blank">
+              &#128172; Join Support Server
+            </a>
+            <a href="getting-started.html" class="btn btn-secondary">
+              &#128640; Getting Started Guide
+            </a>
+          </div>
+
+          <div class="alert alert-info" style="margin-top: 20px;">
+            <span class="alert-icon">&#128161;</span>
+            <div>
+              When contacting support, providing the following information will help us assist you faster:
+              <ul style="margin-top: 8px; padding-left: 20px;">
+                <li>Error message (if any)</li>
+                <li>Description of when the issue occurred</li>
+                <li>Email service you are using (Gmail, Naver, Outlook, etc.)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const icon = document.getElementById('menu-icon');
+      sidebar.classList.toggle('open');
+      icon.innerHTML = sidebar.classList.contains('open') ? '&#10005;' : '&#9776;';
+    }
+
+    document.addEventListener('click', function(e) {
+      const sidebar = document.getElementById('sidebar');
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+      if (window.innerWidth <= 768 &&
+          !sidebar.contains(e.target) &&
+          !menuBtn.contains(e.target) &&
+          sidebar.classList.contains('open')) {
+        toggleSidebar();
+      }
+    });
+  </script>
+</body>
+</html>
