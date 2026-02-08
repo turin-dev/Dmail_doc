@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자주 묻는 질문 - D-Mail | Discord 이메일 알림 봇 FAQ</title>
+  <meta name="description" content="D-Mail 사용 중 자주 묻는 질문 정리. 지원하는 메일 서비스, 알림 주기, 인증코드 자동 추출, 개인정보 보호, 여러 계정 연결 등을 안내합니다.">
+  <meta name="keywords" content="D-Mail FAQ, 자주 묻는 질문, Discord 이메일 봇, 알림 주기, 인증코드 추출, Gmail 연결, IMAP">
+  <meta name="author" content="D-Mail">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#5865F2">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✉</text></svg>">
+  <link rel="canonical" href="https://doc.dmailbot.com/faq.html">
+  <link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/faq.html">
+  <link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/faq.html">
+  <link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/faq.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="자주 묻는 질문 - D-Mail">
+  <meta property="og:description" content="D-Mail 사용 중 자주 묻는 질문과 해결 팁을 모았습니다.">
+  <meta property="og:url" content="https://doc.dmailbot.com/faq.html">
+  <meta property="og:site_name" content="D-Mail">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image" content="https://doc.dmailbot.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="D-Mail - Discord 이메일 알림 봇">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="자주 묻는 질문 - D-Mail">
+  <meta name="twitter:description" content="D-Mail FAQ: 지원 메일, 알림 주기, 인증코드 자동 추출, 개인정보 보호 안내.">
+  <meta name="twitter:image" content="https://doc.dmailbot.com/og-image.png">
+  <meta name="twitter:image:alt" content="D-Mail - Discord 이메일 알림 봇">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "D-Mail은 어떤 서비스인가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "D-Mail은 Discord에서 이메일을 실시간으로 알림받는 봇입니다. Gmail OAuth 연결과 IMAP(네이버/다음/iCloud 등) 연결을 지원합니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "어떤 메일을 연결할 수 있나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gmail은 OAuth로 안전하게 연결하고, 네이버/다음/iCloud 등은 IMAP과 앱 비밀번호로 연결합니다. IMAP을 지원하는 다른 서비스도 연결할 수 있어요."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "알림은 얼마나 자주 오나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "D-Mail은 30초마다 새 메일을 확인하며, 보통 30초~1분 내에 알림을 받습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "인증코드 자동 추출은 어떻게 동작하나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Gemini AI가 메일 내용을 분석해 인증코드를 자동으로 추출하며, Code: XXXXXX 형태로 표시됩니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "메일 내용은 저장되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "D-Mail은 메일 내용을 저장하지 않습니다. 알림 전송 후 메일 데이터는 삭제됩니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "여러 계정을 연결할 수 있나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "여러 메일 계정을 연결할 수 있으며, 알림은 하나의 DM으로 오고 어떤 계정의 메일인지 표시됩니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "연결 직후 기존 메일도 알림이 오나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "연결 이후에 도착하는 새 메일부터 알림이 발송됩니다. 기존 메일은 알림이 오지 않습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "알림이 안 올 때는 어떻게 하나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Discord에서 DM 수신을 허용했는지 확인하고, 문제 해결 가이드를 참고하세요."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "홈", "item": "https://doc.dmailbot.com/"},
+      {"@type": "ListItem", "position": 2, "name": "자주 묻는 질문", "item": "https://doc.dmailbot.com/faq.html"}
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" onclick="toggleSidebar()">
+    <span id="menu-icon">&#9776;</span>
+  </button>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon">&#9993;</div>
+          <span>D-Mail</span>
+        </div>
+        <a href="en/faq.html" class="lang-switch" title="Switch to English">
+          <span class="lang-switch-icon">&#127760;</span>
+          EN
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">시작하기</div>
+        <a href="index.html" class="nav-link">
+          <span class="nav-icon">&#127968;</span>
+          <span>홈</span>
+        </a>
+        <a href="getting-started.html" class="nav-link">
+          <span class="nav-icon">&#128640;</span>
+          <span>시작하기</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">메일 연결</div>
+        <a href="gmail-connect.html" class="nav-link">
+          <span class="nav-icon">&#128231;</span>
+          <span>Gmail 연결</span>
+        </a>
+        <a href="imap-connect.html" class="nav-link">
+          <span class="nav-icon">&#128233;</span>
+          <span>다른 메일 연결</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">기능 사용법</div>
+        <a href="notifications.html" class="nav-link">
+          <span class="nav-icon">&#128276;</span>
+          <span>알림 받기</span>
+        </a>
+        <a href="send-mail.html" class="nav-link">
+          <span class="nav-icon">&#9992;</span>
+          <span>메일 보내기</span>
+        </a>
+        <a href="manage-mail.html" class="nav-link">
+          <span class="nav-icon">&#9881;</span>
+          <span>메일 관리</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">도움말</div>
+        <a href="troubleshooting.html" class="nav-link">
+          <span class="nav-icon">&#128295;</span>
+          <span>문제 해결</span>
+        </a>
+        <a href="faq.html" class="nav-link active">
+          <span class="nav-icon">&#10067;</span>
+          <span>자주 묻는 질문</span>
+        </a>
+      </div>
+
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="index.html">홈</a>
+        <span class="breadcrumb-separator">&#8250;</span>
+        <span>자주 묻는 질문</span>
+      </div>
+
+      <header class="page-header">
+        <div class="page-header-content">
+          <h1 class="page-title">&#10067; 자주 묻는 질문</h1>
+          <p class="page-description">
+            D-Mail 사용 중 자주 묻는 질문을 모았습니다. 빠르게 궁금증을 해결해보세요.
+          </p>
+        </div>
+        <!-- Theme Toggle -->
+        <div class="theme-toggle-wrapper">
+          <span class="theme-toggle-label">☀️</span>
+          <button class="theme-toggle" onclick="toggleTheme()" title="테마 전환" aria-label="다크모드 전환"></button>
+          <span class="theme-toggle-label">🌙</span>
+        </div>
+      </header>
+
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#10067;</span> FAQ
+        </h2>
+        <div class="card-content">
+          <div class="faq-item active">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="true" aria-controls="faq-a1">
+              D-Mail은 어떤 서비스인가요?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a1">
+              Discord에서 이메일을 실시간으로 알림받는 봇입니다. Gmail OAuth 연결과 IMAP(네이버/다음/iCloud 등) 연결을 지원합니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a2">
+              어떤 메일을 연결할 수 있나요?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a2">
+              Gmail은 OAuth로 안전하게 연결하고, 네이버/다음/iCloud 등은 IMAP과 앱 비밀번호로 연결합니다.
+              자세한 내용은 <a href="gmail-connect.html">Gmail 연결</a> 및 <a href="imap-connect.html">다른 메일 연결</a> 가이드를 참고하세요.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a3">
+              알림은 얼마나 자주 오나요?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a3">
+              D-Mail은 30초마다 새 메일을 확인하며, 보통 30초~1분 내에 알림을 받습니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a4">
+              인증코드 자동 추출은 어떻게 동작하나요?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a4">
+              Google Gemini AI가 메일 내용을 분석해 인증코드를 자동으로 추출하며, <code>Code: XXXXXX</code> 형태로 표시됩니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a5">
+              메일 내용은 저장되나요?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a5">
+              D-Mail은 메일 내용을 저장하지 않습니다. 알림 전송 후 메일 데이터는 삭제됩니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a6">
+              여러 계정을 연결할 수 있나요?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a6">
+              여러 메일 계정을 연결할 수 있으며, 알림은 하나의 DM으로 오고 어떤 계정의 메일인지 표시됩니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a7">
+              연결 직후 기존 메일도 알림이 오나요?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a7">
+              연결 이후에 도착하는 새 메일부터 알림이 발송됩니다. 기존 메일은 알림이 오지 않습니다.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a8">
+              알림이 안 올 때는 어떻게 하나요?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a8">
+              Discord에서 DM 수신을 허용했는지 확인하고, <a href="troubleshooting.html">문제 해결</a> 가이드를 참고하세요.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128172;</span> 도움이 더 필요하신가요?
+        </h2>
+        <div class="card-content">
+          <p>문제가 해결되지 않았다면 아래 링크를 확인해주세요.</p>
+          <div style="margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="troubleshooting.html" class="btn btn-secondary">&#128295; 문제 해결 가이드</a>
+            <a href="https://discord.gg/Mf92KJtPCc" class="btn btn-primary" target="_blank">&#128172; 서포트 서버 참가</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#127919;</span> 다음 단계
+        </h2>
+        <div class="card-content">
+          <div class="feature-grid">
+            <a href="getting-started.html" class="feature-card">
+              <div class="feature-icon">&#128640;</div>
+              <h3 class="feature-title">시작하기</h3>
+              <p class="feature-description">D-Mail 봇을 처음 사용하시나요? 여기서 시작하세요.</p>
+            </a>
+            <a href="notifications.html" class="feature-card">
+              <div class="feature-icon">&#128276;</div>
+              <h3 class="feature-title">알림 받기</h3>
+              <p class="feature-description">메일 알림이 어떻게 오는지 알아보기</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const icon = document.getElementById('menu-icon');
+      sidebar.classList.toggle('open');
+      icon.innerHTML = sidebar.classList.contains('open') ? '&#10005;' : '&#9776;';
+    }
+
+    document.addEventListener('click', function(e) {
+      const sidebar = document.getElementById('sidebar');
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+      if (window.innerWidth <= 768 &&
+          !sidebar.contains(e.target) &&
+          !menuBtn.contains(e.target) &&
+          sidebar.classList.contains('open')) {
+        toggleSidebar();
+      }
+    });
+
+    function toggleFaq(question) {
+      const item = question.closest('.faq-item');
+      const isOpen = item.classList.toggle('active');
+      question.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+
+    document.querySelectorAll('.faq-question').forEach((question) => {
+      question.addEventListener('click', () => toggleFaq(question));
+      question.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          toggleFaq(question);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

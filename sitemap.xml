@@ -5,7 +5,7 @@
     <!-- Main page (Korean) -->
     <url>
         <loc>https://doc.dmailbot.com/</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/"/>
@@ -16,7 +16,7 @@
     <!-- Main page (English) -->
     <url>
         <loc>https://doc.dmailbot.com/en/</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/"/>
@@ -27,7 +27,7 @@
     <!-- Getting Started (Korean) -->
     <url>
         <loc>https://doc.dmailbot.com/getting-started.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/getting-started.html"/>
@@ -38,7 +38,7 @@
     <!-- Getting Started (English) -->
     <url>
         <loc>https://doc.dmailbot.com/en/getting-started.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/getting-started.html"/>
@@ -49,7 +49,7 @@
     <!-- Gmail Connection Guide (Korean) -->
     <url>
         <loc>https://doc.dmailbot.com/gmail-connect.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/gmail-connect.html"/>
@@ -60,7 +60,7 @@
     <!-- Gmail Connection Guide (English) -->
     <url>
         <loc>https://doc.dmailbot.com/en/gmail-connect.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/gmail-connect.html"/>
@@ -71,7 +71,7 @@
     <!-- IMAP Connection Guide (Korean) -->
     <url>
         <loc>https://doc.dmailbot.com/imap-connect.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/imap-connect.html"/>
@@ -82,7 +82,7 @@
     <!-- IMAP Connection Guide (English) -->
     <url>
         <loc>https://doc.dmailbot.com/en/imap-connect.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/imap-connect.html"/>
@@ -93,7 +93,7 @@
     <!-- Notifications Guide (Korean) -->
     <url>
         <loc>https://doc.dmailbot.com/notifications.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/notifications.html"/>
@@ -104,7 +104,7 @@
     <!-- Notifications Guide (English) -->
     <url>
         <loc>https://doc.dmailbot.com/en/notifications.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/notifications.html"/>
@@ -115,7 +115,7 @@
     <!-- Send Mail Guide (Korean) -->
     <url>
         <loc>https://doc.dmailbot.com/send-mail.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/send-mail.html"/>
@@ -126,7 +126,7 @@
     <!-- Send Mail Guide (English) -->
     <url>
         <loc>https://doc.dmailbot.com/en/send-mail.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/send-mail.html"/>
@@ -137,7 +137,7 @@
     <!-- Mail Management Guide (Korean) -->
     <url>
         <loc>https://doc.dmailbot.com/manage-mail.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/manage-mail.html"/>
@@ -148,7 +148,7 @@
     <!-- Mail Management Guide (English) -->
     <url>
         <loc>https://doc.dmailbot.com/en/manage-mail.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/manage-mail.html"/>
@@ -159,7 +159,7 @@
     <!-- Troubleshooting Guide (Korean) -->
     <url>
         <loc>https://doc.dmailbot.com/troubleshooting.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/troubleshooting.html"/>
@@ -170,12 +170,34 @@
     <!-- Troubleshooting Guide (English) -->
     <url>
         <loc>https://doc.dmailbot.com/en/troubleshooting.html</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
         <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/troubleshooting.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/troubleshooting.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/troubleshooting.html"/>
+    </url>
+
+    <!-- FAQ (Korean) -->
+    <url>
+        <loc>https://doc.dmailbot.com/faq.html</loc>
+        <lastmod>2026-02-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/faq.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/faq.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/faq.html"/>
+    </url>
+
+    <!-- FAQ (English) -->
+    <url>
+        <loc>https://doc.dmailbot.com/en/faq.html</loc>
+        <lastmod>2026-02-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/faq.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/faq.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/faq.html"/>
     </url>
 
 </urlset>

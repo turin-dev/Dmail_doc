@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - D-Mail | Discord Email Notification Bot FAQ</title>
+  <meta name="description" content="Common questions about D-Mail. Learn supported email services, notification interval, verification code extraction, privacy, and multiple account support.">
+  <meta name="keywords" content="D-Mail FAQ, Discord email bot, notifications, verification code extraction, Gmail OAuth, IMAP">
+  <meta name="author" content="D-Mail">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#5865F2">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✉</text></svg>">
+  <link rel="canonical" href="https://doc.dmailbot.com/en/faq.html">
+  <link rel="alternate" hreflang="ko" href="https://doc.dmailbot.com/faq.html">
+  <link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/faq.html">
+  <link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/faq.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="FAQ - D-Mail">
+  <meta property="og:description" content="Answers to the most common questions about D-Mail.">
+  <meta property="og:url" content="https://doc.dmailbot.com/en/faq.html">
+  <meta property="og:site_name" content="D-Mail">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://doc.dmailbot.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="D-Mail - Discord Email Notification Bot">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FAQ - D-Mail">
+  <meta name="twitter:description" content="D-Mail FAQ: supported email services, notification interval, code extraction, and privacy.">
+  <meta name="twitter:image" content="https://doc.dmailbot.com/og-image.png">
+  <meta name="twitter:image:alt" content="D-Mail - Discord Email Notification Bot">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is D-Mail?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "D-Mail is a Discord bot that delivers real-time email notifications. It supports Gmail OAuth and IMAP connections (Naver, Daum, iCloud, and more)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which email services can I connect?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gmail connects securely via OAuth, while Naver/Daum/iCloud use IMAP with app passwords. Other IMAP-supported services are available too."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often do notifications arrive?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "D-Mail checks for new emails every 30 seconds, so notifications typically arrive within 30 seconds to 1 minute."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does verification code extraction work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Gemini AI analyzes the email content and extracts verification codes, displayed as Code: XXXXXX."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is email content stored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "D-Mail does not store email content. Email data is deleted after notifications are sent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I connect multiple accounts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can connect multiple email accounts. Notifications arrive in a single DM and indicate which account they belong to."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I get notifications for old emails after connecting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Notifications are sent only for new emails that arrive after you connect your account."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I do if I am not receiving notifications?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Make sure Discord DMs are allowed and check the troubleshooting guide for common fixes."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://doc.dmailbot.com/en/"},
+      {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://doc.dmailbot.com/en/faq.html"}
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" onclick="toggleSidebar()">
+    <span id="menu-icon">&#9776;</span>
+  </button>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon">&#9993;</div>
+          <span>D-Mail</span>
+        </div>
+        <a href="../faq.html" class="lang-switch" title="한국어로 전환">
+          <span class="lang-switch-icon">&#127760;</span>
+          KO
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Getting Started</div>
+        <a href="index.html" class="nav-link">
+          <span class="nav-icon">&#127968;</span>
+          <span>Home</span>
+        </a>
+        <a href="getting-started.html" class="nav-link">
+          <span class="nav-icon">&#128640;</span>
+          <span>Getting Started</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Connect Email</div>
+        <a href="gmail-connect.html" class="nav-link">
+          <span class="nav-icon">&#128231;</span>
+          <span>Gmail Connect</span>
+        </a>
+        <a href="imap-connect.html" class="nav-link">
+          <span class="nav-icon">&#128233;</span>
+          <span>Other Email</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Features</div>
+        <a href="notifications.html" class="nav-link">
+          <span class="nav-icon">&#128276;</span>
+          <span>Notifications</span>
+        </a>
+        <a href="send-mail.html" class="nav-link">
+          <span class="nav-icon">&#9992;</span>
+          <span>Send Email</span>
+        </a>
+        <a href="manage-mail.html" class="nav-link">
+          <span class="nav-icon">&#9881;</span>
+          <span>Manage Email</span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Help</div>
+        <a href="troubleshooting.html" class="nav-link">
+          <span class="nav-icon">&#128295;</span>
+          <span>Troubleshooting</span>
+        </a>
+        <a href="faq.html" class="nav-link active">
+          <span class="nav-icon">&#10067;</span>
+          <span>FAQ</span>
+        </a>
+      </div>
+
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">&#8250;</span>
+        <span>FAQ</span>
+      </div>
+
+      <header class="page-header">
+        <div class="page-header-content">
+          <h1 class="page-title">&#10067; FAQ</h1>
+          <p class="page-description">
+            Find quick answers to the most common D-Mail questions.
+          </p>
+        </div>
+        <!-- Theme Toggle -->
+        <div class="theme-toggle-wrapper">
+          <span class="theme-toggle-label">&#9728;&#65039;</span>
+          <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle dark mode"></button>
+          <span class="theme-toggle-label">&#127769;</span>
+        </div>
+      </header>
+
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#10067;</span> Frequently Asked Questions
+        </h2>
+        <div class="card-content">
+          <div class="faq-item active">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="true" aria-controls="faq-a1">
+              What is D-Mail?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a1">
+              D-Mail is a Discord bot that delivers real-time email notifications. It supports Gmail OAuth and IMAP connections (Naver, Daum, iCloud, and more).
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a2">
+              Which email services can I connect?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a2">
+              Gmail connects securely via OAuth, while Naver/Daum/iCloud use IMAP with app passwords. See the <a href="gmail-connect.html">Gmail guide</a> and <a href="imap-connect.html">IMAP guide</a> for details.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a3">
+              How often do notifications arrive?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a3">
+              D-Mail checks for new emails every 30 seconds, so notifications typically arrive within 30 seconds to 1 minute.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a4">
+              How does verification code extraction work?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a4">
+              Google Gemini AI analyzes the email content and extracts verification codes, displayed as <code>Code: XXXXXX</code>.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a5">
+              Is email content stored?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a5">
+              D-Mail does not store email content. Email data is deleted after notifications are sent.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a6">
+              Can I connect multiple accounts?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a6">
+              Yes. You can connect multiple email accounts. Notifications arrive in a single DM and indicate which account they belong to.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a7">
+              Do I get notifications for old emails after connecting?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a7">
+              No. Notifications are sent only for new emails that arrive after you connect your account.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a8">
+              What should I do if I am not receiving notifications?
+              <span class="faq-toggle">&#9662;</span>
+            </div>
+            <div class="faq-answer" id="faq-a8">
+              Make sure Discord DMs are allowed and check the <a href="troubleshooting.html">troubleshooting guide</a> for common fixes.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128172;</span> Need more help?
+        </h2>
+        <div class="card-content">
+          <p>If your issue is not resolved, check the links below.</p>
+          <div style="margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="troubleshooting.html" class="btn btn-secondary">&#128295; Troubleshooting</a>
+            <a href="https://discord.gg/Mf92KJtPCc" class="btn btn-primary" target="_blank">&#128172; Join Support Server</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#127919;</span> Next Steps
+        </h2>
+        <div class="card-content">
+          <div class="feature-grid">
+            <a href="getting-started.html" class="feature-card">
+              <div class="feature-icon">&#128640;</div>
+              <h3 class="feature-title">Getting Started</h3>
+              <p class="feature-description">New to D-Mail? Start here.</p>
+            </a>
+            <a href="notifications.html" class="feature-card">
+              <div class="feature-icon">&#128276;</div>
+              <h3 class="feature-title">Notifications</h3>
+              <p class="feature-description">Learn how email notifications work</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const icon = document.getElementById('menu-icon');
+      sidebar.classList.toggle('open');
+      icon.innerHTML = sidebar.classList.contains('open') ? '&#10005;' : '&#9776;';
+    }
+
+    document.addEventListener('click', function(e) {
+      const sidebar = document.getElementById('sidebar');
+      const menuBtn = document.querySelector('.mobile-menu-btn');
+      if (window.innerWidth <= 768 &&
+          !sidebar.contains(e.target) &&
+          !menuBtn.contains(e.target) &&
+          sidebar.classList.contains('open')) {
+        toggleSidebar();
+      }
+    });
+
+    function toggleFaq(question) {
+      const item = question.closest('.faq-item');
+      const isOpen = item.classList.toggle('active');
+      question.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+
+    document.querySelectorAll('.faq-question').forEach((question) => {
+      question.addEventListener('click', () => toggleFaq(question));
+      question.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          toggleFaq(question);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
