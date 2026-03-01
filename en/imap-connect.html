@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Connect Naver/Daum Email - D-Mail | IMAP App Password Setup Guide</title>
-  <meta name="description" content="Learn how to connect Naver Mail, Daum/Kakao Mail, and iCloud to D-Mail using IMAP. Step-by-step guide from generating app passwords to completing the connection.">
-  <meta name="keywords" content="D-Mail Naver Mail, Daum Mail connect, Kakao Mail, IMAP setup, app password, Discord email notification, iCloud mail Discord">
+  <title>Connect Naver/Daum/Yahoo/Zoho Email - D-Mail | IMAP App Password Setup Guide</title>
+  <meta name="description" content="Learn how to connect Naver Mail, Daum/Kakao Mail, iCloud, Yahoo Mail, and Zoho Mail to D-Mail using IMAP. Step-by-step guide from generating app passwords to completing the connection.">
+  <meta name="keywords" content="D-Mail Naver Mail, Daum Mail connect, Kakao Mail, Yahoo Mail, Zoho Mail, IMAP setup, app password, Discord email notification, iCloud mail Discord">
   <meta name="author" content="D-Mail">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#5865F2">
@@ -15,8 +15,8 @@
   <link rel="alternate" hreflang="en" href="https://doc.dmailbot.com/en/imap-connect.html">
   <link rel="alternate" hreflang="x-default" href="https://doc.dmailbot.com/imap-connect.html">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Connect Naver/Daum Email - D-Mail">
-  <meta property="og:description" content="Learn how to connect Naver, Daum/Kakao, and iCloud mail to D-Mail using IMAP and app passwords.">
+  <meta property="og:title" content="Connect Naver/Daum/Yahoo/Zoho Email - D-Mail">
+  <meta property="og:description" content="Learn how to connect Naver, Daum/Kakao, iCloud, Yahoo, and Zoho mail to D-Mail using IMAP and app passwords.">
   <meta property="og:url" content="https://doc.dmailbot.com/en/imap-connect.html">
   <meta property="og:site_name" content="D-Mail">
   <meta property="og:locale" content="en_US">
@@ -25,8 +25,8 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="D-Mail - Discord Email Notification Bot">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Connect Naver/Daum Email - D-Mail">
-  <meta name="twitter:description" content="Connect Naver, Daum/Kakao mail to D-Mail using app passwords. Step-by-step guide.">
+  <meta name="twitter:title" content="Connect Naver/Daum/Yahoo/Zoho Email - D-Mail">
+  <meta name="twitter:description" content="Connect Naver, Daum/Kakao, Yahoo, and Zoho mail to D-Mail using app passwords. Step-by-step guide.">
   <meta name="twitter:image" content="https://doc.dmailbot.com/og-image.png">
   <meta name="twitter:image:alt" content="D-Mail - Discord Email Notification Bot">
   <script type="application/ld+json">
@@ -183,6 +183,21 @@
                   <td>App password required</td>
                 </tr>
                 <tr>
+                  <td>Yahoo Mail</td>
+                  <td style="color: var(--success-color);">&#10003; Supported</td>
+                  <td>App password required</td>
+                </tr>
+                <tr>
+                  <td>Zoho Mail</td>
+                  <td style="color: var(--success-color);">&#10003; Supported</td>
+                  <td>App password required</td>
+                </tr>
+                <tr>
+                  <td>ProtonMail</td>
+                  <td style="color: var(--error-color);">&#10005; Not Supported</td>
+                  <td>Requires Bridge app (remote connection not possible)</td>
+                </tr>
+                <tr>
                   <td>Outlook / Hotmail</td>
                   <td style="color: var(--error-color);">&#10005; Not Supported</td>
                   <td>Currently unsupported due to API costs</td>
@@ -196,6 +211,12 @@
             <div>
               <strong>Notice for Outlook users:</strong> Outlook/Hotmail is currently not supported due to Microsoft API cost limitations.
               We recommend using a Gmail account instead.
+            </div>
+          </div>
+          <div class="alert alert-warning" style="margin-top: 8px;">
+            <span class="alert-icon">&#9888;</span>
+            <div>
+              <strong>Notice for ProtonMail users:</strong> ProtonMail requires the ProtonMail Bridge desktop app for IMAP access, which cannot be used with remote services like D-Mail.
             </div>
           </div>
         </div>
@@ -308,6 +329,108 @@
                 <a href="https://accounts.kakao.com/weblogin/account/security" target="_blank" class="btn btn-secondary" style="margin-top: 12px;">
                   &#128279; Kakao Account Security
                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yahoo Mail Guide -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128248;</span> Yahoo Mail App Password Guide
+        </h2>
+        <div class="card-content">
+          <div class="steps">
+            <div class="step">
+              <h3 class="step-title">Go to Yahoo Account Security</h3>
+              <div class="step-content">
+                <p>Log in to Yahoo Mail and navigate to <strong>Account Security</strong>.</p>
+                <a href="https://login.yahoo.com/account/security" target="_blank" class="btn btn-secondary" style="margin-top: 12px;">
+                  &#128279; Yahoo Account Security
+                </a>
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">Enable Two-Step Verification</h3>
+              <div class="step-content">
+                <p>You must have <strong>Two-Step Verification</strong> enabled before you can generate an app password.</p>
+                <p style="margin-top: 8px;">Skip this step if you already have it enabled.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">Generate App Password</h3>
+              <div class="step-content">
+                <p>On the security page, click <strong>"Generate app password"</strong>.</p>
+                <p style="margin-top: 8px;">Select <code>Other app</code>, enter <code>D-Mail</code>, and click Generate.</p>
+
+                <div class="alert alert-warning" style="margin-top: 16px;">
+                  <span class="alert-icon">&#9888;</span>
+                  <div>
+                    Copy the generated 16-character app password immediately — it won't be shown again.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">Enter in D-Mail</h3>
+              <div class="step-content">
+                <p>Go back to Discord and click the "Enter App Password" button.</p>
+                <p style="margin-top: 8px;">Enter the copied app password to complete the connection!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zoho Mail Guide -->
+      <div class="card">
+        <h2 class="card-title">
+          <span>&#128188;</span> Zoho Mail App Password Guide
+        </h2>
+        <div class="card-content">
+          <div class="steps">
+            <div class="step">
+              <h3 class="step-title">Go to Zoho Account Security</h3>
+              <div class="step-content">
+                <p>Log in to your Zoho account and navigate to <strong>Security settings</strong>.</p>
+                <a href="https://accounts.zoho.com/home#security" target="_blank" class="btn btn-secondary" style="margin-top: 12px;">
+                  &#128279; Zoho Account Security
+                </a>
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">Enable Two-Factor Authentication</h3>
+              <div class="step-content">
+                <p>You must enable <strong>Two-Factor Authentication (MFA)</strong> before generating an app password.</p>
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">Generate App Password</h3>
+              <div class="step-content">
+                <p>In security settings, find the <strong>"App Passwords"</strong> section and click <strong>"Generate New Password"</strong>.</p>
+                <p style="margin-top: 8px;">Enter <code>D-Mail</code> as the app name and generate it.</p>
+
+                <div class="alert alert-info" style="margin-top: 16px;">
+                  <span class="alert-icon">&#128161;</span>
+                  <div>
+                    Zoho Mail's IMAP server is <code>imap.zoho.com</code> (port 993).
+                    D-Mail will detect it automatically.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="step">
+              <h3 class="step-title">Enter in D-Mail</h3>
+              <div class="step-content">
+                <p>Go back to Discord and click the "Enter App Password" button.</p>
+                <p style="margin-top: 8px;">Enter the copied app password to complete the connection!</p>
               </div>
             </div>
           </div>
